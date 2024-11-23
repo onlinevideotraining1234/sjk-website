@@ -34,14 +34,15 @@
 
     <!-- Menu Items -->
     <ul class="menu__list flex">
-      <li class="menu__item menu__item--has-dropdown relative">
+      <li class="menu__item group menu__item--has-dropdown relative">
         <a href="#" class="menu__link">UIS</a>
         <div
-          class="menu__dropdown w-[100vw] p-10 fixed left-0 right-0 top-9 bg-white"
+          class="menu__dropdown group-hover: w-[100vw] p-10 fixed left-0 right-0 bg-white hidden hover:flex"
         >
-          <div class="menu__dropdown-colums flex w-8/12 mx-auto">
-            <div class="menu__dropdown-column pr-32">
-              <!-- First Column: Links -->
+          <div
+            class="menu__dropdown-columns flex w-full mx-auto justify-center"
+          >
+            <!-- <div class="menu__dropdown-column pr-32">
               <ul class="menu__dropdown-links">
                 <li>
                   <a href="#" class="menu__dropdown-link">General Imaging</a>
@@ -61,10 +62,85 @@
                 <li><a href="#" class="menu__dropdown-link">Liver Care</a></li>
                 <li><a href="#" class="menu__dropdown-link">View All</a></li>
               </ul>
-            </div>
-            <div class="menu__dropdown-column w-2/3 flex flex-wrap">
-              <!-- Second Column: Mega Menu Items -->
+            </div> -->
+            <div class="menu__dropdown-column flex flex-wrap">
               <div
+                class="menu__dropdown-item flex flex-col justify-items-center"
+              >
+                <a href="#" class="menu__dropdown-item-image">
+                  <img
+                    src="/public/images/products/UIS/resona-i9.webp"
+                    alt="Item 1"
+                    class="menu__dropdown-image"
+                  />
+                </a>
+                <div class="menu__dropdown-item-content text-center">
+                  <h3 class="menu__dropdown-item-name text-lg">Resona I9</h3>
+                  <a
+                    href="#"
+                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div
+                class="menu__dropdown-item flex flex-col justify-items-center"
+              >
+                <a href="#" class="menu__dropdown-item-image">
+                  <img
+                    src="/public/images/products/UIS/consona-n9.webp"
+                    alt="Item 1"
+                    class="menu__dropdown-image"
+                  />
+                </a>
+                <div class="menu__dropdown-item-content text-center">
+                  <h3 class="menu__dropdown-item-name text-lg">Consona N9</h3>
+                  <a
+                    href="#"
+                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div
+                class="menu__dropdown-item flex flex-col justify-items-center"
+              >
+                <a href="#" class="menu__dropdown-item-image">
+                  <img
+                    src="/public/images/products/UIS/mx-7.webp"
+                    alt="Item 1"
+                    class="menu__dropdown-image"
+                  />
+                </a>
+                <div class="menu__dropdown-item-content text-center">
+                  <h3 class="menu__dropdown-item-name text-lg">MX7</h3>
+                  <a
+                    href="#"
+                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div
+                class="menu__dropdown-item flex flex-col justify-items-center"
+              >
+                <a href="#" class="menu__dropdown-item-image">
+                  <img
+                    src="/public/images/products/CT/uCT-550.webp"
+                    alt="Item 1"
+                    class="menu__dropdown-image"
+                  />
+                </a>
+                <div class="menu__dropdown-item-content text-center">
+                  <h3 class="menu__dropdown-item-name text-lg">uMI 550</h3>
+                  <a
+                    href="#"
+                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <!-- <div
                 class="menu__dropdown-item flex flex-col justify-items-center"
               >
                 <a href="#" class="menu__dropdown-item-image">
@@ -101,88 +177,12 @@
                     >Learn More</a
                   >
                 </div>
-              </div>
-              <div
-                class="menu__dropdown-item flex flex-col justify-items-center"
-              >
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/resona-i9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Resona R9</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-              <div
-                class="menu__dropdown-item flex flex-col justify-items-center"
-              >
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/resona-i9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Resona R9</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-              <div
-                class="menu__dropdown-item flex flex-col justify-items-center"
-              >
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/resona-i9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Resona R9</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
-              <div
-                class="menu__dropdown-item flex flex-col justify-items-center"
-              >
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/resona-i9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Resona R9</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Learn More</a
-                  >
-                </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </li>
-      <li class="menu__item menu__item--has-dropdown relative">
+      <!-- <li class="menu__item menu__item--has-dropdown relative">
         <a href="#" class="menu__link">MRI</a>
         <div class="menu__dropdown absolute hidden w-[100vw] p-6">
           <div class="menu__dropdown-item">
@@ -196,56 +196,43 @@
               <a href="#" class="menu__dropdown-details">Learn More</a>
             </div>
           </div>
-          <!-- Add more submenu items as needed -->
         </div>
       </li>
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">CT</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
+        <div class="menu__dropdown"></div>
       </li>
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">Mammo</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
+        <div class="menu__dropdown"></div>
       </li>
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">Angio</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
+        <div class="menu__dropdown"></div>
       </li>
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">Pet CT</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
+        <div class="menu__dropdown"></div>
       </li>
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">X-Ray</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
-      </li>
+        <div class="menu__dropdown"></div>
+      </li> -->
       <li class="menu__item menu__item--has-dropdown">
         <a href="#" class="menu__link">Shinjyuku Care+</a>
-        <div class="menu__dropdown">
-          <!-- Submenu items here -->
-        </div>
+        <div class="menu__dropdown"></div>
       </li>
     </ul>
   </div>
 </nav>
 
 <style>
-  .menu__logo-svg {
-    @apply opacity-70 hover:opacity-100;
+  .menu {
+    background-color: rgb(245, 245, 247);
   }
 
-  .menu__wrapper {
-    /* @apply w-8/12 mx-auto py-2 items-center justify-center; */
+  .menu__logo-svg {
+    @apply opacity-70 hover:opacity-100;
   }
 
   .menu__item {
@@ -259,6 +246,9 @@
 
   .menu__dropdown {
     @apply hidden;
+    background-color: rgb(245, 245, 247);
+    max-width: 100vw;
+    margin: 0 auto;
   }
 
   .menu__dropdown-links li {
@@ -266,7 +256,7 @@
   }
 
   .menu__dropdown-image {
-    @apply h-48 p-6;
+    @apply h-64 p-6 aspect-square;
   }
 
   /* Responsive Styles */
