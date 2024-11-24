@@ -1,25 +1,14 @@
 ---
-import "../styles/main.css";
-import MegaMenu from "../components/sections/MegaMenu.astro";
+import Main from "../layouts/Main.astro";
 import IndexHero from "../components/sections/IndexHero.astro";
 import IndexResonaI9 from "../components/sections/indexResonaI9.astro";
 import Index2Products from "../components/sections/Index2Products.astro";
 import IndexuCT550 from "../components/sections/IndexuCT550.astro";
 ---
 
-<html lang="en" class="h-full w-full">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Шинжьюкү ХХК</title>
-  </head>
-  <body>
-    <MegaMenu />
-    <IndexHero />
-    <IndexResonaI9 />
-    <Index2Products />
-    <IndexuCT550 />
-  </body>
-</html>
+<Main>
+  <IndexHero />
+  <IndexResonaI9 />
+  <Index2Products />
+  <IndexuCT550 />
+</Main>

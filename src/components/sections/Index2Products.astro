@@ -1,53 +1,47 @@
 <section class="two-column-section grid grid-cols-1 sm:grid-cols-2 px-2 gap-2">
   <!-- Left Block -->
   <div
-    class="block relative flex flex-col items-center justify-center bg-cover bg-center text-white"
+    class="square-block relative flex flex-col items-center justify-center bg-cover bg-center"
     style="background-image: url('/public/images/products/UIS/mx-7.webp');"
   >
-    <div class="block__overlay absolute inset-0 bg-black bg-opacity-20"></div>
-    <div class="block__content relative z-10 text-center p-2">
-      <h3 class="block__title text-2xl font-bold mb-4">
-        MX7 - Зөөврийн эхо аппарат
-      </h3>
-      <p class="block__description text-sm mb-6">
+    <div class="index-product absolute inset-0 bg-black bg-opacity-20"></div>
+    <div class="index-product__content text-white">
+      <h2 class="index-product__title">MX7</h2>
+      <p class="index-product__desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni numquam
         eos voluptatum adipisci.
       </p>
-      <a
-        href="#mx7"
-        class="block__button inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-8 rounded-3xl transition duration-300"
-      >
-        Learn More
+      <a href="#mx7" class="index-product__button index-product__button--blue">
+        Дэлгэрэнгүй
       </a>
     </div>
   </div>
 
   <!-- Right Block -->
   <div
-    class="block relative flex flex-col items-center justify-center bg-cover bg-center text-white"
+    class="square-block relative flex flex-col items-center justify-center bg-cover bg-center text-white"
     style="background-image: url('/public/images/products/UIS/consona-n9.webp');"
   >
-    <div class="block__overlay absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="block__content relative z-10 text-center">
-      <h3 class="block__title text-2xl font-bold mb-4">
-        Consona N9 - Суурин эхо аппарат
-      </h3>
-      <p class="block__description text-sm mb-6">
+    <div class="index-product__overlay absolute inset-0 bg-black bg-opacity-60">
+    </div>
+    <div class="index-product__content text-white">
+      <h2 class="index-product__title">Consona N9</h2>
+      <p class="index-product__desc">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, saepe?
       </p>
       <a
         href="#consona-n9"
-        class="block__button inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-8 rounded-3xl transition duration-300"
+        class="index-product__button index-product__button--blue"
       >
-        Learn More
+        Дэлгэрэнгүй
       </a>
     </div>
   </div>
 </section>
 
 <style>
-  .block {
-    aspect-ratio: 1; /* 1:1 харьцаа */
+  .square-block {
+    aspect-ratio: 1;
     position: relative;
     overflow: hidden;
   }
