@@ -6,6 +6,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
+import "../styles/components.css";
 ---
 
 <html lang="en" class="h-full w-full">
@@ -17,15 +18,16 @@ import "../styles/global.css";
     <meta name="description" content="Shinjyuku website" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
     />
+
     <title>Шинжьюкү ХХК</title>
   </head>
   <body>
     <main>
-      <Header />
+      <!-- <Header /> -->
       <!-- <Menu /> -->
-      <!-- <MainNav /> -->
+      <MainNav />
       <!-- <MegaMenu /> -->
       <slot />
       <Footer />
@@ -37,5 +39,10 @@ import "../styles/global.css";
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="/src/js/header.js"></script>
   </body>
 </html>

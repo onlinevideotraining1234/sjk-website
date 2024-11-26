@@ -8,5 +8,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwind-hamburgers")],
+  plugins: [require("tailwind-hamburgers"), require("tw-elements/plugin.cjs")],
 };
