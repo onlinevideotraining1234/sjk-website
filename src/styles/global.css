@@ -10,6 +10,10 @@
     font-family:'Calibri', sans-serif;
 }
 
+main {
+    background: #f3f4f6;
+}
+
 .hero-section__content {
 display: flex;
 flex-direction: column;

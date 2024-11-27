@@ -1,7 +1,5 @@
 ---
-import Menu from "../components/Menu.astro";
 import MainNav from "../components/MainNav.astro";
-import MegaMenu from "../components/MegaMenu.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
@@ -9,7 +7,7 @@ import "../styles/global.css";
 import "../styles/components.css";
 ---
 
-<html lang="en" class="h-full w-full">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
@@ -20,15 +18,12 @@ import "../styles/components.css";
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
     />
-
     <title>Шинжьюкү ХХК</title>
   </head>
   <body>
     <main>
-      <!-- <Header /> -->
-      <!-- <Menu /> -->
       <MainNav />
-      <!-- <MegaMenu /> -->
+      <!-- <Header /> -->
       <slot />
       <Footer />
     </main>
@@ -43,6 +38,5 @@ import "../styles/components.css";
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <script src="/src/js/header.js"></script>
   </body>
 </html>
