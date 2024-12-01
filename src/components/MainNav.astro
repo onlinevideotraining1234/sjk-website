@@ -1,4 +1,8 @@
-<header>
+---
+import logo from "../../public/images/icons/logo-icon-black.webp";
+---
+
+<header class="flex justify-center">
   <nav
     class="static bg-gray-100 max-w-xl mx-auto h-10 flex justify-between md:justify-center items-center"
   >
@@ -7,11 +11,7 @@
     >
       <div class="logo">
         <a href="#">
-          <img
-            src="/public/images/icons/logo-icon-black.webp"
-            class="w-6"
-            alt=""
-          />
+          <img src={logo} class="w-6" alt="" />
         </a>
       </div>
       <input type="radio" name="slider" id="menu-btn" />
@@ -20,7 +20,7 @@
         <label for="close-btn" class="btn close-btn"
           ><i class="fa fa-times"></i></label
         >
-        <li class=""><a href="#">Эхлэл</a></li>
+        <li class=""><a href="/">Эхлэл</a></li>
         <li class="">
           <input type="checkbox" id="showMega" />
           <label
@@ -28,7 +28,7 @@
             class="dropdown__button mobile-item cursor-pointer">UIS</label
           >
           <div
-            class="mega-box w-full flex justify-center absolute top-10 inset-x-0 bg-green-300 transition-all duration-500 ease-in-out h-auto"
+            class="mega-box w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100"
           >
             <div
               class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
@@ -37,9 +37,12 @@
                 <div
                   class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
                 >
-                  <a href="#" class="dropdown__image-link">
+                  <a
+                    href="/products/UIS/resona-i9"
+                    class="dropdown__image-link"
+                  >
                     <img
-                      src="/public/images/products/UIS/resona-i9.webp"
+                      src="/public/images/products/UIS/ResonaI9/resonai9Menu.webp"
                       alt="Item 1"
                       class="dropdown__image w-auto h-auto"
                     />
@@ -49,7 +52,7 @@
                       Resona I9
                     </h3>
                     <a
-                      href="#"
+                      href="/products/UIS/resona-i9"
                       class="dropdown__link text-xs text-gray-600 hover:underline"
                       >Дэлгэрэнгүй</a
                     >
@@ -60,7 +63,10 @@
                 <div
                   class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
                 >
-                  <a href="#" class="dropdown__image-link">
+                  <a
+                    href="/products/UIS/consona-n9"
+                    class="dropdown__image-link"
+                  >
                     <img
                       src="/public/images/products/UIS/consona-n9.webp"
                       alt="Item 1"
@@ -72,7 +78,7 @@
                       Consona N9
                     </h3>
                     <a
-                      href="#"
+                      href="/products/UIS/consona-n9"
                       class="dropdown__link text-xs text-gray-600 hover:underline"
                       >Дэлгэрэнгүй</a
                     >
@@ -83,7 +89,7 @@
                 <div
                   class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
                 >
-                  <a href="#" class="dropdown__image-link">
+                  <a href="/products/UIS/mx7" class="dropdown__image-link">
                     <img
                       src="/public/images/products/UIS/mx-7.webp"
                       alt="Item 1"
@@ -93,7 +99,7 @@
                   <div class="dropdown__content text-center">
                     <h3 class="dropdown__name text-3xl md:text-lg">MX7</h3>
                     <a
-                      href="#"
+                      href="/products/UIS/mx7"
                       class="dropdown__link text-xs text-gray-600 hover:underline"
                       >Дэлгэрэнгүй</a
                     >
@@ -104,7 +110,7 @@
                 <div
                   class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
                 >
-                  <a href="#" class="dropdown__image-link">
+                  <a href="/products/CT/uCT550" class="dropdown__image-link">
                     <img
                       src="/public/images/products/CT/uCT-550.webp"
                       alt="Item 1"
@@ -114,7 +120,7 @@
                   <div class="dropdown__content text-center">
                     <h3 class="dropdown__name text-3xl md:text-lg">uCT550</h3>
                     <a
-                      href="#"
+                      href="/products/CT/uCT550"
                       class="dropdown__link text-xs text-gray-600 hover:underline"
                       >Дэлгэрэнгүй</a
                     >
@@ -124,7 +130,9 @@
             </div>
           </div>
         </li>
-        <li class="hover:text-gray-900"><a href="#">Shinjyuku Care+</a></li>
+        <li class="hover:text-gray-900">
+          <a href="/shinjyukuCare">Shinjyuku Care+</a>
+        </li>
       </ul>
       <label for="menu-btn" class="btn menu-btn"
         ><i class="fas fa-bars text-black font-extralight"></i></label
@@ -137,6 +145,7 @@
   .mega-box {
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
   }
 
   .nav-links li:hover .mega-box {

@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import indexHero from "../images/indexHero.jpg";
+
+export interface Props {
+  showcaseTitle?: string;
+  showcaseDesc?: string;
+}
+
+const {
+  showcaseTitle = "Let's Grow Together",
+  showcaseDesc = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur dolorem incidunt quos, maiores eum vitae?",
+} = Astro.props as Props;
+---
+
+<section
+  class="showcase h-[85vh] w-full bg-cover bg-center bg-white flex flex-col items-center justify-center text-white mb-2"
+  style="background-image: url({indexHero});"
+>
+  <Image src={indexHero} alt="Showcase Image" />
+  <div
+    class="showcase-section__content text-center px-4 sm:px-8 md:px-12 lg:px-16"
+  >
+    <h1
+      class="showcase-section__title text-xl leading-10 md:text-4xl lg:text-5xl font-bold"
+    >
+      {showcaseTitle}
+    </h1>
+    <p
+      class="showcase-section__desc mt-4 text-sm sm:text-base md:text-lg lg:text-xl"
+    >
+      {showcaseDesc}
+    </p>
+  </div>
+</section>
+
+<style>
+  .showcase-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .showcase-section__title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .showcase-section__desc {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+  }
+</style>
