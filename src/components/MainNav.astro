@@ -2,33 +2,39 @@
 import logo from "../../public/images/icons/logo-icon-black.webp";
 ---
 
-<header class="flex justify-center">
+<header class="max-w-[100vw]">
   <nav
-    class="static bg-gray-100 max-w-xl mx-auto h-10 flex justify-between md:justify-center items-center"
+    class="static w-full mx-auto h-10 flex justify-between md:justify-center items-center"
   >
     <div
-      class="wrapper w-full flex justify-between md:justify-center items-center px-4 gap-x-8"
+      class="wrapper w-full flex justify-between md:justify-center items-center px-4 gap-x-10"
     >
       <div class="logo">
         <a href="#">
-          <img src={logo} class="w-6" alt="" />
+          <img
+            src="/public/images/icons/logo-icon-black.webp"
+            class="w-6"
+            alt=""
+          />
         </a>
       </div>
       <input type="radio" name="slider" id="menu-btn" />
       <input type="radio" name="slider" id="close-btn" />
-      <ul class="nav-links flex md:gap-x-8 text-gray-700 w-full static">
+      <ul
+        class="nav-links flex justify-center items-center md:gap-x-10 text-gray-700 w-auto static md:text-center h-full"
+      >
         <label for="close-btn" class="btn close-btn"
           ><i class="fa fa-times"></i></label
         >
         <li class=""><a href="/">Эхлэл</a></li>
-        <li class="">
+        <li class="w-full">
           <input type="checkbox" id="showMega" />
           <label
             for="showMega"
             class="dropdown__button mobile-item cursor-pointer">UIS</label
           >
           <div
-            class="mega-box w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100"
+            class="mega-box w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 md:border-t md:py-16"
           >
             <div
               class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
@@ -130,7 +136,7 @@ import logo from "../../public/images/icons/logo-icon-black.webp";
             </div>
           </div>
         </li>
-        <li class="hover:text-gray-900">
+        <li class="hover:text-gray-900 text-nowrap">
           <a href="/shinjyukuCare">Shinjyuku Care+</a>
         </li>
       </ul>
@@ -170,9 +176,6 @@ import logo from "../../public/images/icons/logo-icon-black.webp";
     top: 10px;
   }
   @media screen and (max-width: 970px) {
-    nav .wrapper {
-      justify-content: space-between;
-    }
     .wrapper .btn {
       display: block;
       color: #242526;
