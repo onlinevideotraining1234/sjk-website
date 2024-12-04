@@ -76,7 +76,6 @@ import MainLayout from "../../../layouts/MainLayout.astro";
       <div class="slider__track-wrapper overflow-hidden relative">
         <div class="slider__track flex transition-transform duration-300">
           <!-- Slide 1 -->
-
           <div class="slider__slide text-center">
             <h2 class="text-3xl md:text-3xl mb-8 md:mt-10">
               General Imaging Solution
@@ -178,7 +177,7 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 
           <!-- Slide 2 -->
           <div
-            class="slider__slide flex flex-wrap gap-10 justify-center content-start"
+            class="slider__slide flex flex-wrap gap-10 justify-center content-start h-fit"
           >
             <h2 class="text-3xl md:text-3xl mb-8 md:mt-10">
               Women Health Solution
@@ -244,7 +243,7 @@ import MainLayout from "../../../layouts/MainLayout.astro";
           </div>
           <!-- Slide 3 -->
           <div
-            class="slider__slide flex flex-wrap gap-10 justify-center content-start"
+            class="slider__slide flex flex-wrap gap-10 justify-center content-start h-fit"
           >
             <h2 class="text-3xl md:text-3xl mb-8 md:mt-10">
               Cardiovascular Solution
@@ -508,12 +507,12 @@ import MainLayout from "../../../layouts/MainLayout.astro";
   let currentIndex = 0;
 
   // Update slider
-  function updateSlider(index) {
+  function updateSlider(index: number) {
     const offset = -index * 100;
-    sliderTrack.style.transform = `translateX(${offset}%)`;
+    (sliderTrack as HTMLElement).style.transform = `translateX(${offset}%)`;
 
     dots.forEach((dot, i) => {
-      dot.classList.toggle("slider__dot-active", i === index);
+      (dot as HTMLElement).classList.toggle("slider__dot-active", i === index);
     });
   }
 
@@ -531,10 +530,10 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 
   // Handle dot click
   dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      currentIndex = parseInt(dot.dataset.slide);
-      updateSlider(currentIndex);
-    });
+    if (dot instanceof HTMLElement && dot.dataset.slide) {
+      const currentIndex = parseInt(dot.dataset.slide);
+      console.log(currentIndex);
+    }
   });
 
   // Initialize slider

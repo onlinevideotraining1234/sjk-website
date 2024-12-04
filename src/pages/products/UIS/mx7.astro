@@ -875,18 +875,31 @@ import MainLayout from "../../../layouts/MainLayout.astro";
     let currentIndex = 0;
 
     // Update slider to show the correct slide
-    function updateSlider(index) {
-      const offset = -index * 100; // Calculate offset to move the track
-      sliderTrack.style.transform = `translateX(${offset}%)`; // Move the track
+    // Function to update the slider
+    function updateSlider(index: number) {
+      const offset = -index * 100;
+
+      // Ensure sliderTrack is an HTMLElement
+      if (sliderTrack instanceof HTMLElement) {
+        sliderTrack.style.transform = `translateX(${offset}%)`;
+      }
 
       // Update dot active state
       dots.forEach((dot, i) => {
-        dot.classList.toggle("slider__dot-active", i === index);
+        if (dot instanceof HTMLElement) {
+          dot.classList.toggle("slider__dot-active", i === index);
+        }
       });
 
-      // Disable buttons if at the start or end
-      prevBtn.disabled = index === 0; // Disable prev button at the start
-      nextBtn.disabled = index === slides.length - 1; // Disable next button at the end
+      // Ensure prevBtn is an HTMLButtonElement
+      if (prevBtn instanceof HTMLButtonElement) {
+        prevBtn.disabled = index === 0;
+      }
+
+      // Ensure nextBtn is an HTMLButtonElement
+      if (nextBtn instanceof HTMLButtonElement) {
+        nextBtn.disabled = index === slides.length - 1;
+      }
     }
 
     // Handle prev button click
@@ -907,13 +920,10 @@ import MainLayout from "../../../layouts/MainLayout.astro";
 
     // Handle dot click
     dots.forEach((dot) => {
-      dot.addEventListener("click", () => {
-        const targetIndex = parseInt(dot.dataset.slide, 10); // Get index from data-slide
-        if (targetIndex >= 0 && targetIndex < slides.length) {
-          currentIndex = targetIndex; // Set the current index
-          updateSlider(currentIndex);
-        }
-      });
+      if (dot instanceof HTMLElement && dot.dataset.slide) {
+        const currentIndex = parseInt(dot.dataset.slide);
+        console.log(currentIndex);
+      }
     });
 
     // Initialize slider
