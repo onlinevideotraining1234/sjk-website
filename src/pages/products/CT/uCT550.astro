@@ -2,459 +2,406 @@
 import MainLayout from "../../../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="uCT 550 - Computed Tomography System">
-  <section class="h-[30vh] md:h-[75vh] w-[100vw] relative">
-    <div
-      class="product-hero__content w-full absolute object-cover top-0 right-0 bottom-0 left-0"
-    >
-      <video
-        id="background-video"
-        autoplay
-        loop
-        muted
-        class="w-full md:h-[75vh] object-cover"
-      >
-        <source
-          src="/public/videos/products/CT/uCT550/uCT550.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div
-        class="flex flex-col w-full text-center pl-12 absolute text-white top-1/2 transform translate-y-[-50%]"
-      >
-        <p class="product-hero__desc text-2xl md:text-3xl md:mb-4 lg:mb-6">
-          40/80 slice CT
-        </p>
-        <h2 class="product-hero__title md:text-8xl">uCT 550</h2>
+<MainLayout title="uCT550 - 40/80 slice CT">
+  <section
+    class="h-[30vh] md:h-[75vh] w-full bg-cover bg-center bg-white grid lg:grid-cols-2 content-center text-white mb-2"
+    style="background-image: url('/public/images/products/CT/uCT550/550cover-dark.webp');"
+  >
+    <div class="product-hero__content lg:w-1/2 lg:mx-auto">
+      <div class="flex flex-col w-full text-start pl-12">
+        <p class="product-hero__desc md:text-2xl md:mb-4">40/80 slice CT</p>
+        <h2 class="product-hero__title md:text-8xl">uCT550</h2>
       </div>
     </div>
   </section>
-
-  <!-- 
-  Эндээс доош засаагүй
-   -->
-
-  <section class="flex flex-col md:flex-row p-12 md:py-32 md:px-96 bg-white">
-    <div class="flex-1">
-      <h2 class="text-3xl mb-8">Innovation, in Every Facet</h2>
+  <section class="flex flex-col p-12 md:py-32 md:px-60 bg-white">
+    <div class="flex flex-col text-center">
+      <h2 class="text-5xl mb-8">Powerful. Proven</h2>
       <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
-        The Resona I9, a general imaging ultrasound system with completely
-        innovative features from inside out. All innovations are developed based
-        on in-depth insights into complex clinical scenarios, providing accurate
-        and timely answers as well as outstanding efficiency and a remarkable
-        user experience.
+        By integrating technologies usually reserved for high-end scanners, uCT
+        550 delivers many advances in image quality and workflow efficiency,
+        significantly enhancing routine clinical performance.
       </p>
-      <img
-        src="/public/images/icons/zstIcon.jpg"
-        alt="ZST Platform Icon"
-        class="w-24 mb-8"
-      />
     </div>
-    <div class="flex-1">
-      <img src="/public/images/products/UIS/ResonaI9/resonai9.webp" alt="" />
-    </div>
-  </section>
-  <section class="flex flex-col md:flex-row p-12 md:py-32 md:px-64 bg-gray-200">
-    <div class="">
-      <h2 class="text-3xl md:text-5xl mb-8">
-        Unlimited Scanning Flexibility Beyond Imagination
-      </h2>
-      <h3 class="text-2xl font-bold mb-4">
-        iConsole - Intelligent Control Panel
-      </h3>
-      <p class="text-sm md:text-2xl text-gray-500 mb-8">
-        • Intelligent and clinical exam-specific control panel layout with
-        special E-ink keys <br />
-        • Breakthrough design with adaptive layout for different clinical scenarios
-      </p>
-      <video
-        src="/public/videos/products/UIS/resonaI9/resona-i9-iconsole.mp4"
-        controls></video>
-    </div>
-  </section>
-  <section class="p-12 md:py-32 md:px-64 bg-gray-100">
-    <h2 class="text-3xl md:text-5xl mb-8">Full-space Floating Control Panel</h2>
-    <p class="text-sm md:text-2xl text-gray-500 mb-8">
-      Can be adjusted for better space utilization, Easily meet various scanning
-      needs
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-gray-500">
-      <div class="">
-        <img
-          src="/public/images/products/UIS/ResonaI9/standScanning.webp"
-          alt=""
-        />
-        <h3 class="text-2xl my-4">Stand Scanning</h3>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1">
+        <p class="mb-2 md:text-xl text-gray-600 pr-20">
+          The Backbone of Exceptional Imaging
+        </p>
+        <h2 class="text-3xl mb-8">Powerful Imaging Chain</h2>
+        <p class="mb-2 md:text-xl text-gray-600 pr-20">
+          High resolution images with low dose
+        </p>
+        <h2 class="text-3xl mb-8">Outstanding Image Quality</h2>
+        <p class="mb-2 md:text-xl text-gray-600 pr-20">
+          Boost daily patient throughput capability
+        </p>
+        <h2 class="text-3xl mb-8">Efficient Workflow</h2>
+        <p class="mb-2 md:text-xl text-gray-600 pr-20">
+          Reduce energy consumption while maintaining workflow efficiency
+        </p>
+        <h2 class="text-3xl mb-8">Smart Energy Saving</h2>
       </div>
-      <div class="">
+      <div class="flex-1 h-96">
         <img
-          src="/public/images/products/UIS/ResonaI9/crouchScanning.webp"
+          src="/public/images/products/CT/uCT550/uct-550-banner.webp"
           alt=""
         />
-        <h3 class="text-2xl my-4">Crouch Scanning</h3>
-      </div>
-      <div class="">
-        <img
-          src="/public/images/products/UIS/ResonaI9/stretchScanning.webp"
-          alt=""
-        />
-        <h3 class="text-2xl my-4">Stretch Scanning</h3>
-      </div>
-      <div class="">
-        <img
-          src="/public/images/products/UIS/ResonaI9/crossBedScanning.webp"
-          alt=""
-        />
-        <h3 class="text-2xl my-4">Cross-Bed Scanning</h3>
       </div>
     </div>
   </section>
-  <section class="p-12 md:py-32 md:px-64 bg-white">
-    <h2 class="text-3xl md:text-5xl mb-8">
-      Bring Optimal Patient Care Immediately
-    </h2>
-    <h3 class="text-2xl font-bold mb-4">Just Fold Down and Go</h3>
-    <p class="text-sm md:text-2xl text-gray-500 mb-8 md:mb-16 leading-8">
-      • Minimum 1 meter height<br />
-      • Easy transportation by MPV (Multi-Purpose Vehicle) for mobile service
-    </p>
-    <div class="grid grid-cols-1 w-full">
-      <div class="flex justify-center md:mb-16 mb-20">
-        <img src="/public/images/products/UIS/ResonaI9/mobility.webp" alt="" />
-      </div>
-      <h3 class="text-2xl font-bold mb-4">
-        Bedside Exams Without Power Cables
-      </h3>
-      <p class="text-sm md:text-2xl text-gray-500 mb-8 md:mb-16 leading-8">
-        • Up to 4 hours continuous scanning<br />
-        • Auto indication of residual power when you grasp the right handle
-      </p>
-      <div class="">
-        <video
-          src="/public/videos/products/UIS/resonaI9/resona-i9-easy-battery.mp4"
-          controls></video>
+  <section class="flex flex-col h-fit p-12 md:py-32 md:px-60 bg-white">
+    <div class="flex flex-col">
+      <h2 class="text-5xl mb-16">Powerful Imaging Chain</h2>
+      <div class="flex flex-1 flex-col md:flex-row">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full md:w-1/2">
+          <div class="flex flex-col">
+            <img
+              src="/public/images/products/CT/uCT550/icon_11.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">5.3 MHU</h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              5.3 MHU X-ray tube with fast cooling rate of 815 kHU/min, ensuring
+              high patient throughput.
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="/public/images/products/CT/uCT550/icon_11.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">50 kW</h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              50 kW power generator enables uninterrupted power.
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="/public/images/products/CT/uCT550/icon_11.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">40 Row Z-Detector</h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              With 22 mm Z-axis coverage and 0.55 mm slice thickness, the uCT
+              550 offers extraordinary spatial resolution and low contrast
+              detectability.
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <img
+              src="/public/images/products/CT/uCT550/icon_11.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">70 kV Scan Mode</h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              The 70 kV scan mode can increase signal-to-noise (SNR) which can
+              be especially beneficial for pediatric patients, contrast imaging
+              and CT Venography (CTV) imaging.
+            </p>
+          </div>
+        </div>
+        <div class="flex-1 w-full md:w-1/2 mt-10 md:mt-0">
+          <img src="/public/images/products/CT/uCT550/uct550-1.webp" alt="" />
+        </div>
       </div>
     </div>
   </section>
-  <section class="p-12 md:py-32 md:px-64 bg-gray-100">
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-16 place-content-center content-center mb-16"
-    >
-      <div class="">
-        <img src="/public/images/products/UIS/zstStructure.webp" alt="" />
+  <section class="flex flex-col p-12 md:py-32 md:px-60 bg-gray-100">
+    <div class="flex flex-col text-start">
+      <h2 class="text-5xl mb-8">Innovative Z-Detector</h2>
+      <div class="flex-1 w-full h-auto">
+        <img src="/public/images/products/CT/uCT550/ct520new.webp" alt="" />
       </div>
-      <div class="flex flex-col justify-center">
-        <h2 class="text-3xl md:text-5xl mb-8">
-          Infinite Imaging Solutions Powered by ZST+
-        </h2>
-        <p class="text-sm md:text-2xl text-gray-500 mb-8">
-          The ZST + platform is an extraordinary innovation, representing an
-          ultrasound evolution. Transforming ultrasound metrics from
-          conventional beam-forming to channel data based processing. It
-          overcomes the traditional trade-off limitation among spatial
-          resolution, temporal resolution and tissue uniformity, delivering
-          exceptional image quality for infinite imaging solutions with non-stop
-          improvements.
+      <div class="flex flex-col md:flex-row pt-24">
+        <div class="flex flex-col mb-10 md:mb-0">
+          <img
+            src="/public/images/products/CT/uCT550/icon_8.webp"
+            class="w-10 h-10 mb-8"
+            alt=""
+          />
+          <h2 class="text-3xl mb-8">40 Row Z-Detector</h2>
+          <p class="mb-2 md:text-xl text-gray-600 pr-20">
+            With 22 mm Z-axis coverage and 0.55 mm slice thickness, the uCT 550
+            offers extraordinary spatial resolution and low contrast
+            detectability.
+          </p>
+        </div>
+        <div class="flex flex-col mb-10 md:mb-0">
+          <img
+            src="/public/images/products/CT/uCT550/icon_3.webp"
+            class="w-10 h-10 mb-8"
+            alt=""
+          />
+          <h2 class="text-3xl mb-8">40 Row Z-Detector</h2>
+          <p class="mb-2 md:text-xl text-gray-600 pr-20">
+            With 22 mm Z-axis coverage and 0.55 mm slice thickness, the uCT 550
+            offers extraordinary spatial resolution and low contrast
+            detectability.
+          </p>
+        </div>
+        <div class="flex flex-col mb-10 md:mb-0">
+          <img
+            src="/public/images/products/CT/uCT550/icon_10.webp"
+            class="w-10 h-10 mb-8"
+            alt=""
+          />
+          <h2 class="text-3xl mb-8">40 Row Z-Detector</h2>
+          <p class="mb-2 md:text-xl text-gray-600 pr-20">
+            With 22 mm Z-axis coverage and 0.55 mm slice thickness, the uCT 550
+            offers extraordinary spatial resolution and low contrast
+            detectability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="flex flex-col p-12 md:py-32 md:px-60 bg-black text-gray-200">
+    <div class="flex flex-col text-center">
+      <h2 class="text-5xl mb-8 md:mb-16">Outstanding Image Quality</h2>
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="flex-1">
+        <h2 class="text-3xl mb-4">Metal Artifact Correction</h2>
+        <p class="mb-2 md:mb-16 md:text-xl text-gray-600 pr-20">
+          (MAC) Removes artifacts while retaining important structural details.
+        </p>
+        <h2 class="text-3xl mb-4">1024 Reconstruction Matrix</h2>
+        <p class="mb-2 md:mb-16 md:text-xl text-gray-600 pr-20">
+          High resolution reconstruction matrices augment spatial resolution and
+          reveal subtle anatomic details.
+        </p>
+        <h2 class="text-3xl mb-4">KARL 3D Iterative Denoising</h2>
+        <p class="mb-2 md:mb-16 md:text-xl text-gray-600 pr-20">
+          The state-of-the-art algorithm is performed in both the projection and
+          image domains.
         </p>
       </div>
-    </div>
-    <div class="flex flex-col justify-center">
-      <p class="text-sm md:text-2xl text-gray-500 mb-8 md:mb-16">
-        Resona I9 provides comprehensive clinical solutions for dedicated
-        applications. Based on in-depth insights into different clinical
-        scenarios, it delivers innovations that give users extreme clarity,
-        outstanding intelligence and enhanced diagnostic confidence.
-      </p>
-      <img
-        src="/public/images/products/UIS/ResonaI9/dedicatedApplications.webp"
-        alt=""
-      />
+      <div class="flex-1 h-96 mt-16 md:mt-0">
+        <img
+          src="/public/images/products/CT/uCT550/outstanding-image-quality.webp"
+          alt=""
+        />
+      </div>
     </div>
   </section>
-  <section class="w-full p-12 md:py-32 md:px-32 bg-gray-200">
-    <h2 class="text-3xl md:text-5xl mb-10 text-center">Clinical Images</h2>
-    <div class="slider">
-      <div class="slider__track-wrapper overflow-hidden relative">
-        <div class="slider__track flex transition-transform duration-300">
-          <!-- Slide 1 -->
-          <div
-            class="slider__slide flex flex-wrap gap-10 w-full justify-center"
-          >
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/liver-HiFR-STE.webp"
-                alt="Image 1"
-              />
-              <h3 class="text-2xl my-4">Lifer HiFR STE</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/hepatic.webp"
-                alt="Image 2"
-              />
-              <h3 class="text-2xl my-4">Hepatic Hemangioma</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/bowel.webp"
-                alt="Image 3"
-              />
-              <h3 class="text-2xl my-4">Bowel image</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/breast-mass.webp"
-                alt="Image 4"
-              />
-              <h3 class="text-2xl my-4">Breast Mass STE</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/metastatic-lymph.webp"
-                alt="Image 5"
-              />
-              <h3 class="text-2xl my-4">Metastatic Lymph Node HR Flow</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/thyroid-nodule.webp"
-                alt="Image 6"
-              />
-              <h3 class="text-2xl my-4">Thyroid Nodule</h3>
-            </div>
+  <section class="flex flex-col h-fit p-12 md:py-32 md:px-60 bg-white">
+    <div class="flex flex-col">
+      <h2 class="text-5xl mb-16">Efficient Workflow</h2>
+      <div class="flex flex-1 flex-col md:flex-row">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full md:w-1/2">
+          <div class="flex flex-col mb-16 md:mb-0">
+            <img
+              src="/public/images/products/CT/uCT550/icon_16.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">
+              Easy-Logic Intelligent Prediction Platform
+            </h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              Easy-Logic anticipates the user's intentions and automatically
+              prepares the scanner in advance resulting in a highly efficient
+              workflow without delays.
+            </p>
           </div>
-          <!-- Slide 2 -->
-          <div
-            class="slider__slide flex flex-wrap gap-10 justify-center content-start"
-          >
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/testis-power-flow.webp"
-                alt="Image 7"
-              />
-              <h3 class="text-2xl my-4">Testis Power Flow</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/prostate-ste.webp"
-                alt="Image 8"
-              />
-              <h3 class="text-2xl my-4">Prostate STE</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/common-carotid-artery.webp"
-                alt="Image 9"
-              />
-              <h3 class="text-2xl my-4">Common Carotid Artery</h3>
-            </div>
-            <div class="slider__item w-full md:w-1/4">
-              <img
-                class="slider__image"
-                src="/public/images/products/UIS/ResonaI9/carotid-artery-stenosis.webp"
-                alt="Image 10"
-              />
-              <h3 class="text-2xl my-4">Carotid Artery Stenosis</h3>
-            </div>
+          <div class="flex flex-col">
+            <img
+              src="/public/images/products/CT/uCT550/icon_18.webp"
+              class="w-10 h-10 mb-8"
+              alt=""
+            />
+            <h2 class="text-3xl mb-8">Advanced Applications</h2>
+            <p class="mb-2 md:text-xl text-gray-600 pr-20">
+              Integrated advanced post-processing applications improve
+              diagnostic confidence.
+            </p>
           </div>
         </div>
+        <div class="flex-1 w-full md:w-1/2 mt-10 md:mt-0">
+          <img
+            src="/public/images/products/CT/uCT550/outstanding-image-quality-desktop.webp"
+            alt=""
+          />
+        </div>
       </div>
-      <!-- Controls -->
-      <div
-        class="slider__controls flex justify-center items-center mt-4 space-x-4"
+    </div>
+  </section>
+  <section class="flex flex-col p-12 md:py-32 md:px-60 bg-black text-white">
+    <div class="flex flex-col md:flex-row text-start">
+      <h2 class="text-5xl mb-8 w-full md:w-1/2">uECO Energy-saving Mode</h2>
+      <p
+        class="w-full md:w-1/2 mb-8 md:mb-12 md:text-2xl text-gray-600 md:pr-20"
       >
-        <button class="slider__control slider__control--prev">&larr;</button>
-        <div class="slider__dots flex space-x-2">
-          <button
-            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
-            data-slide="0"></button>
-          <button
-            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
-            data-slide="1"></button>
-        </div>
-        <button class="slider__control slider__control--next">&rarr;</button>
-      </div>
+        With the uECO mode, energy consumption of the scanner is reduced by
+        partially powering down system components while maintaining the basic
+        functionalities to ensure that the system can quickly resume work. This
+        significantly improves energy efficiency, thereby reducing the overall
+        environmental impact and operating costs.
+      </p>
     </div>
-  </section>
-  <section class="p-12 md:py-32 md:px-64 bg-white">
-    <h2 class="text-3xl md:text-5xl mb-8">Transducers</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 text-gray-500">
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">Convex Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>SC6-1s</p>
-            <p>SC8-2s</p>
-            <p>C11-3s</p>
-            <p>C6-2Gs</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/convex-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
+    <div class="flex flex-col md:flex-row gap-10">
+      <div
+        class="flex-1 p-16 text-gray-200"
+        style="background-image: url('/public/images/products/CT/uCT550/map1.webp');"
+      >
+        <div class="slide-title-part text-xl mb-8">01</div>
+        <div class="slide-title-main text-2xl pb-4 border-b mb-4">
+          <p>Reduce Electricity Consumption</p>
+        </div>
+        <div class="slide-content text-lg">
+          Reduce electricity consumption for operation and ambient cooling by up
+          to 31.4% compared to conventional stand-by mode.
         </div>
       </div>
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">Linear Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>L14-3Ws</p>
-            <p>L9-3s</p>
-            <p>L20-5s</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/linear-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
+      <div
+        class="flex-1 p-16 text-gray-200"
+        style="background-image: url('/public/images/products/CT/uCT550/map1.webp');"
+      >
+        <div class="slide-title-part text-xl mb-8">02</div>
+        <div class="slide-title-main text-2xl pb-4 border-b mb-4">
+          <p>One-click for uECO</p>
+        </div>
+        <div class="slide-content text-lg">
+          During the system idle time, such as at nights or on weekends, the
+          system can switch to the uECO mode with one-click.
         </div>
       </div>
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">Phased-Array Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>SP5-1s</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/phased-array-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
+      <div
+        class="flex-1 p-16 text-gray-200"
+        style="background-image: url('/public/images/products/CT/uCT550/map1.webp');"
+      >
+        <div class="slide-title-part text-xl mb-8">03</div>
+        <div class="slide-title-main text-2xl pb-4 border-b mb-4">
+          <p>Smart Wake-up</p>
         </div>
-      </div>
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">Endo-cavity Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>V11-3Hs</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/endo-cavity-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
-        </div>
-      </div>
-      <div>
-        <h3 class="text-2xl my-4">Bi-planes Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>ELC13-4s</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/bi-planes-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
-        </div>
-      </div>
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">TEE Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>P7-3Ts</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/tee-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
-        </div>
-      </div>
-      <div class="border-b pb-10">
-        <h3 class="text-2xl my-4">Pencil Transducer:</h3>
-        <div class="flex">
-          <div class="w-1/3 text-xl leading-10">
-            <p>CW2s</p>
-            <p>CW5s</p>
-          </div>
-          <img
-            src="/public/images/products/UIS/ResonaI9/pencil-transducer.webp"
-            alt=""
-            class="w-2/3"
-          />
+        <div class="slide-content text-lg">
+          Upon waking up from the uECO mode, the system is able to quickly
+          become stable and ready for work, thus reducing the wait time while
+          providing consistent high-quality images.
         </div>
       </div>
     </div>
   </section>
-</MainLayout>
+  <section class="p-12 md:py-32 md:px-64 bg-gray-100">
+    <h2 class="text-3xl md:text-5xl mb-8 md:mb-16">Clinical Applications</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-gray-500">
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-1.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Non-contrast Head Scan</h3>
+      </div>
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-2.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Carotid CTA</h3>
+      </div>
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-3.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Contrast Enhanced Abdomen Scan</h3>
+      </div>
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-4.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Non-contrast Chest Scan</h3>
+      </div>
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-5.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Aorta CTA</h3>
+      </div>
+      <div class="">
+        <img
+          src="/public/images/products/CT/uCT550/gallery-item-6.webp"
+          alt=""
+        />
+        <h3 class="text-2xl my-4">Run-off CTA</h3>
+      </div>
+    </div>
+  </section>
 
-<style>
-  .slider__track-wrapper {
-    @apply overflow-hidden w-full; /* Slider-ийн нийт өргөнийг тогтооно */
-  }
+  <style>
+    .slider__track-wrapper {
+      @apply overflow-hidden w-full; /* Slider-ийн нийт өргөнийг тогтооно */
+    }
 
-  .slider__track {
-    @apply flex; /* Slide-уудыг дарааллуулна */
-  }
+    .slider__track {
+      @apply flex; /* Slide-уудыг дарааллуулна */
+    }
 
-  .slider__slide {
-    @apply w-full flex-shrink-0; /* Нэг слайд зөвхөн нэг дэлгэцэнд багтахаар тохируулна */
-  }
+    .slider__slide {
+      @apply w-full flex-shrink-0; /* Нэг слайд зөвхөн нэг дэлгэцэнд багтахаар тохируулна */
+    }
 
-  /* Add this to your Tailwind CSS config or global CSS if needed */
-  .slider__control {
-    @apply text-xl font-bold text-gray-700 cursor-pointer;
-  }
+    /* Add this to your Tailwind CSS config or global CSS if needed */
+    .slider__control {
+      @apply text-xl font-bold text-gray-700 cursor-pointer;
+    }
 
-  .slider__dot {
-    @apply transition-colors duration-300 cursor-pointer;
-  }
+    .slider__dot {
+      @apply transition-colors duration-300 cursor-pointer;
+    }
 
-  .slider__dot-active {
-    @apply bg-blue-500;
-  }
-</style>
+    .slider__dot-active {
+      @apply bg-blue-500;
+    }
+  </style>
 
-<script>
-  const sliderTrack = document.querySelector(".slider__track");
-  const slides = document.querySelectorAll(".slider__slide");
-  const dots = document.querySelectorAll(".slider__dot");
-  const prevBtn = document.querySelector(".slider__control--prev");
-  const nextBtn = document.querySelector(".slider__control--next");
+  <script>
+    const sliderTrack = document.querySelector(".slider__track");
+    const slides = document.querySelectorAll(".slider__slide");
+    const dots = document.querySelectorAll(".slider__dot");
+    const prevBtn = document.querySelector(".slider__control--prev");
+    const nextBtn = document.querySelector(".slider__control--next");
 
-  let currentIndex = 0;
+    let currentIndex = 0;
 
-  // Update slider
-  function updateSlider(index) {
-    const offset = -index * 100;
-    sliderTrack.style.transform = `translateX(${offset}%)`;
+    // Update slider
+    function updateSlider(index) {
+      const offset = -index * 100;
+      sliderTrack.style.transform = `translateX(${offset}%)`;
 
-    dots.forEach((dot, i) => {
-      dot.classList.toggle("slider__dot-active", i === index);
-    });
-  }
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("slider__dot-active", i === index);
+      });
+    }
 
-  // Handle prev button
-  prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateSlider(currentIndex);
-  });
-
-  // Handle next button
-  nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateSlider(currentIndex);
-  });
-
-  // Handle dot click
-  dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      currentIndex = parseInt(dot.dataset.slide);
+    // Handle prev button
+    prevBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       updateSlider(currentIndex);
     });
-  });
 
-  // Initialize slider
-  updateSlider(currentIndex);
-</script>
+    // Handle next button
+    nextBtn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlider(currentIndex);
+    });
+
+    // Handle dot click
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        currentIndex = parseInt(dot.dataset.slide);
+        updateSlider(currentIndex);
+      });
+    });
+
+    // Initialize slider
+    updateSlider(currentIndex);
+  </script>
+</MainLayout>

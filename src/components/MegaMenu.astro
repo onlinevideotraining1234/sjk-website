@@ -1,222 +1,312 @@
 ---
-
+import logo from "../../public/images/icons/logo-icon-black.webp";
 ---
 
-<header class="bg-gray-100 max-w-screen-xl p-3 mx-auto">
+<header class="max-w-[100vw]">
   <nav
-    class="menu w-full flex items-center justify-between md:justify-center flex-row"
+    class="static w-full mx-auto h-10 flex justify-between md:justify-center items-center"
   >
-    <!-- Logo -->
-    <div class="sjk-logo">
-      <a href="shinjyuku.mn" class="sjk-logo__link">
-        <span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 22.68 22.68"
-            class="w-4 h-4 fill-gray-700 hover:fill-gray-950"
-            ><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"
-              ><g id="Layer_1-2" data-name="Layer 1"
-                ><g id="Layer_2-2" data-name="Layer 2"
-                  ><g id="Layer_1-2-2" data-name="Layer 1-2"
-                    ><path
-                      d="M19.53,5s-5.91,10.17-14,13.9c0,0-3.16-12.69,17.14-18.94,0,0-1.88,21-15.29,20.06a3.91,3.91,0,0,1-1-.19,12.13,12.13,0,0,0,1.77-1.05C11.08,16.73,17.11,11.81,19.53,5Z"
-                    ></path><path
-                      d="M0,22.5l4.65-2.6s.28-.2.42.06a.32.32,0,0,1-.11.41H5L0,22.68Z"
-                    ></path></g
-                  ></g
-                ></g
-              ></g
-            ></svg
-          >
-        </span>
-      </a>
-    </div>
-    <!-- Hamburger Button (Small Screens) -->
-    <button
-      class="block md:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
-      id="hamburger-button"
+    <div
+      class="wrapper w-full flex justify-between md:justify-center items-center px-4 gap-x-10"
     >
-      <div class="hamburger-lines">
-        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
-        <span class="block w-6 h-0.5 bg-gray-700 mb-1"></span>
-        <span class="block w-6 h-0.5 bg-gray-700"></span>
+      <div class="logo">
+        <a href="#">
+          <img
+            src="/public/images/icons/logo-icon-black.webp"
+            class="w-6"
+            alt=""
+          />
+        </a>
       </div>
-    </button>
-
-    <!-- Menu Items -->
-    <ul class="hidden w-full flex-col md:flex md:flex-row" id="menu">
-      <li class="menu__item group menu__item--has-dropdown static">
-        <a
-          href="/src/pages/products/allUltrasoundMachines.astro"
-          class="menu__link">UIS</a
+      <input type="radio" name="slider" id="menu-btn" />
+      <input type="radio" name="slider" id="close-btn" />
+      <ul
+        class="nav-links flex justify-center items-center md:gap-x-10 text-gray-700 w-auto static md:text-center h-full"
+      >
+        <label for="close-btn" class="btn close-btn"
+          ><i class="fa fa-times"></i></label
         >
-        <!-- <input
-          type="checkbox"
-          class="peer absolute bg-blue-300 top-0 inset-x-0 h-12 opacity-0 z-10 cursor-pointer w-full"
-        />
-        <div
-          class="absolute top-0 right-3 text-black transition-transform duration-500 peer-checked:rotate-180"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="size-6 md:hidden"
+        <li class=""><a href="/">Эхлэл</a></li>
+        <li class="w-full uis-link">
+          <input type="checkbox" id="showMega-uis" />
+          <label
+            for="showMega-uis"
+            class="dropdown__button mobile-item cursor-pointer">UIS</label
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-          </svg>
-        </div> -->
-
-        <div
-          class="menu__dropdown w-[100vw] p-10 absolute top-8 md:top-8 left-0 bg-blue-400 hidden peer-checked:visible group-hover:flex"
-        >
           <div
-            class="menu__dropdown-columns flex justify-center w-full mx-auto"
+            class="mega-box-uis w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 md:border-t md:py-16"
           >
-            <div class="menu__dropdown-column flex flex-wrap">
-              <div class="menu__dropdown-item flex flex-col justify-">
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/resona-i9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Resona I9</h3>
+            <div
+              class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
+            >
+              <div class="dropdown__group">
+                <div
+                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
+                >
                   <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Дэлгэрэнгүй</a
+                    href="/products/UIS/resona-i9"
+                    class="dropdown__image-link"
                   >
+                    <img
+                      src="/public/images/products/UIS/ResonaI9/resonai9Menu.webp"
+                      alt="Item 1"
+                      class="dropdown__image w-auto h-64 md:h-72"
+                    />
+                  </a>
+                  <div class="dropdown__content text-center">
+                    <h3 class="dropdown__name text-3xl md:text-lg">
+                      Resona I9
+                    </h3>
+                    <a
+                      href="/products/UIS/resona-i9"
+                      class="dropdown__link text-xs text-gray-600 hover:underline"
+                      >Дэлгэрэнгүй</a
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="menu__dropdown-item flex flex-col justify-">
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/consona-n9.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">Consona N9</h3>
+              <div class="dropdown__group">
+                <div
+                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
+                >
                   <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Дэлгэрэнгүй</a
+                    href="/products/UIS/consona-n9"
+                    class="dropdown__image-link"
                   >
+                    <img
+                      src="/public/images/products/UIS/consona-n9.webp"
+                      alt="Item 1"
+                      class="dropdown__image w-auto h-64 md:h-72"
+                    />
+                  </a>
+                  <div class="dropdown__content text-center">
+                    <h3 class="dropdown__name text-3xl md:text-lg">
+                      Consona N9
+                    </h3>
+                    <a
+                      href="/products/UIS/consona-n9"
+                      class="dropdown__link text-xs text-gray-600 hover:underline"
+                      >Дэлгэрэнгүй</a
+                    >
+                  </div>
                 </div>
               </div>
-              <div class="menu__dropdown-item flex flex-col justify-">
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/UIS/mx-7.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">MX7</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Дэлгэрэнгүй</a
-                  >
-                </div>
-              </div>
-              <div class="menu__dropdown-item flex flex-col justify-">
-                <a href="#" class="menu__dropdown-item-image">
-                  <img
-                    src="/public/images/products/CT/uCT-550.webp"
-                    alt="Item 1"
-                    class="menu__dropdown-image"
-                  />
-                </a>
-                <div class="menu__dropdown-item-content text-center">
-                  <h3 class="menu__dropdown-item-name text-lg">uMI 550</h3>
-                  <a
-                    href="#"
-                    class="menu__dropdown-item-link text-xs text-gray-600 hover:underline"
-                    >Дэлгэрэнгүй</a
-                  >
+              <div class="dropdown__group">
+                <div
+                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
+                >
+                  <a href="/products/UIS/mx7" class="dropdown__image-link">
+                    <img
+                      src="/public/images/products/UIS/mx-7.webp"
+                      alt="Item 1"
+                      class="dropdown__image w-auto h-64 md:h-72"
+                    />
+                  </a>
+                  <div class="dropdown__content text-center">
+                    <h3 class="dropdown__name text-3xl md:text-lg">MX7</h3>
+                    <a
+                      href="/products/UIS/mx7"
+                      class="dropdown__link text-xs text-gray-600 hover:underline"
+                      >Дэлгэрэнгүй</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </li>
-      <li class="menu__item w-full">
-        <a href="/src/pages/shinjyukuCare.astro" class="menu__link"
-          >Shinjyuku Care+</a
-        >
-        <div class="menu__dropdown"></div>
-      </li>
-    </ul>
+        </li>
+        <li class="w-full ct-link">
+          <input type="checkbox" id="showMega-ct" />
+          <label
+            for="showMega-ct"
+            class="dropdown__button mobile-item cursor-pointer">CT</label
+          >
+          <div
+            class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 md:border-t md:py-16"
+          >
+            <div
+              class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
+            >
+              <div class="dropdown__group">
+                <div
+                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
+                >
+                  <a href="/products/CT/uCT550" class="dropdown__image-link">
+                    <img
+                      src="/public/images/products/CT/uCT-550.webp"
+                      alt="Item 1"
+                      class="dropdown__image w-auto h-64 md:h-72"
+                    />
+                  </a>
+                  <div class="dropdown__content text-center">
+                    <h3 class="dropdown__name text-3xl md:text-lg">uCT550</h3>
+                    <a
+                      href="/products/CT/uCT550"
+                      class="dropdown__link text-xs text-gray-600 hover:underline"
+                      >Дэлгэрэнгүй</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- <li class="hover:text-gray-900 text-nowrap">
+          <a href="/shinjyukuCare">Shinjyuku Care+</a>
+        </li> -->
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"
+        ><i class="fas fa-bars text-black font-extralight"></i></label
+      >
+    </div>
   </nav>
 </header>
+
 <style>
-  .menu {
-    background-color: rgb(245, 245, 247);
+  .mega-box-uis,
+  .mega-box-ct {
+    opacity: 0;
+    visibility: hidden;
     z-index: 1000;
   }
 
-  .menu__logo-svg {
-    @apply opacity-70 hover:opacity-100;
+  .nav-links .uis-link:hover .mega-box-uis {
+    opacity: 1;
+    visibility: visible;
   }
 
-  .menu__item {
-    @apply mx-5 text-sm font-medium text-gray-600 hover:text-gray-950;
+  .nav-links .ct-link:hover .mega-box-ct {
+    opacity: 1;
+    visibility: visible;
   }
 
-  /* Dropdown styles */
-  .menu__item--has-dropdown:hover .menu__dropdown {
-    @apply flex;
-  }
-
-  .menu__dropdown {
-    @apply hidden;
-    background-color: rgb(245, 245, 247);
-    max-width: 100vw;
-    margin: 0 auto;
+  .nav {
+    background: #f5f5f7;
     z-index: 1001;
   }
 
-  .menu__dropdown-links li {
-    @apply py-2;
+  .wrapper .btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
   }
-
-  .menu__dropdown-image {
-    @apply h-64 p-6 aspect-square;
+  .wrapper .btn.close-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
   }
-
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .menu__wrapper {
-      flex-direction: column;
-      align-items: flex-start;
+  @media screen and (max-width: 970px) {
+    .wrapper .btn {
+      display: block;
+      color: #242526;
+    }
+    .wrapper .nav-links {
+      /* position: fixed; */
+      position: absolute;
+      /* height: max-content; */
+      height: fit-content;
+      overflow-y: visible;
+      width: 100%;
+      top: 0;
+      left: -100%;
+      background: #f5f5f7;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      /* overflow-y: auto; */
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+      transition: all 0.3s ease;
+    }
+    /* custom scroll bar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #242526;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3a3b3c;
+    }
+    #menu-btn:checked ~ .nav-links {
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn {
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn {
+      display: block;
+    }
+    .nav-links li {
+      margin: 15px 10px;
+    }
+    .nav-links li a {
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    #showMega:checked ~ .nav-links {
+      max-height: fit-content;
+      z-index: 1000;
     }
 
-    .menu__list {
-      flex-direction: column;
-      gap: 10px;
+    #showMega-uis:checked ~ .mega-box-uis {
+      max-height: fit-content;
     }
+
+    #showMega-uis:checked ~ .mega-box-ct {
+      max-height: 0;
+    }
+
+    #showMega-ct:checked ~ .mega-box-ct {
+      max-height: fit-content;
+    }
+
+    #showMega-ct:checked ~ .mega-box-uis {
+      max-height: 0;
+    }
+
+    /* #showMega:checked ~ .dropdown__content {
+      max-height: fit-content;
+      z-index: 1000;
+    } */
+    .nav-links .desktop-item {
+      display: none;
+    }
+    .nav-links .mobile-item {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .mega-box-uis,
+    .mega-box-ct {
+      position: relative;
+      top: 65px;
+      opacity: 1;
+      visibility: visible;
+      padding: 0 20px;
+      max-height: 0px;
+      height: fit-content;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .mega-box-uis .content {
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+    .mega-box-ct .content {
+      box-shadow: none;
+      flex-direction: column;
+      padding: 20px 20px 0 20px;
+    }
+  }
+  nav input {
+    display: none;
   }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburgerButton = document.getElementById("hamburger-button");
-    const menu = document.getElementById("menu");
-
-    hamburgerButton.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-      menu.classList.toggle("flex");
-    });
-  });
-</script>

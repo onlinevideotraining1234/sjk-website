@@ -1,5 +1,6 @@
 ---
 import MainNav from "../components/MainNav.astro";
+import MegaMenu from "../components/MegaMenu.astro";
 import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
@@ -23,8 +24,8 @@ const { title } = Astro.props;
   </head>
   <body>
     <main>
-      <MainNav />
-      <!-- <Header /> -->
+      <!-- <MainNav /> -->
+      <MegaMenu />
       <slot />
       <Footer />
     </main>
