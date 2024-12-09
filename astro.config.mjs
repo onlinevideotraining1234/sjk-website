@@ -8,6 +8,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://shinjyuku.mn",
   integrations: [tailwind(), react()],
+  base: "/",
   image: {
     service: {
       type: "astro/assets",

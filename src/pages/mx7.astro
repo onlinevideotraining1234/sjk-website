@@ -1,0 +1,940 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="MX7 - Portable Diagnostic Ultrasound System">
+  <section
+    class="h-[30vh] md:h-[75vh] w-full bg-cover bg-center bg-white grid lg:grid-cols-2 content-center text-white mb-2"
+    style="background-image: url('/images/products/UIS/MX7/mx7Hero.webp');"
+  >
+    <div class="product-hero__content lg:w-1/2 lg:mx-auto">
+      <div class="flex flex-col w-full text-start pl-12">
+        <p class="product-hero__desc md:text-2xl md:mb-4 lg:mb-6">
+          Portable Diagnostic Ultrasound System
+        </p>
+        <h2 class="product-hero__title md:text-8xl">MX 7</h2>
+      </div>
+    </div>
+  </section>
+  <!-- 
+  Эндээс доош засаагүй  
+  -->
+  <section class="flex flex-col md:flex-row p-12 md:py-32 md:px-48 bg-white">
+    <div class="flex-1">
+      <h2 class="text-3xl mb-8">Innovation, in Every Facet</h2>
+      <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
+        The Resona I9, a general imaging ultrasound system with completely
+        innovative features from inside out. All innovations are developed based
+        on in-depth insights into complex clinical scenarios, providing accurate
+        and timely answers as well as outstanding efficiency and a remarkable
+        user experience.
+      </p>
+      <img
+        src="/images/icons/ZST.webp"
+        alt="ZST Platform Icon"
+        class="w-32 mb-8 brightness-100"
+      />
+    </div>
+    <div class="flex-1">
+      <img src="/images/products/UIS/MX7/p55-s1-pc-mx7-wings.webp" alt="" />
+    </div>
+  </section>
+  <section
+    class="flex flex-col md:flex-row p-12 md:py-32 md:px-48"
+    style="background-color: #d2d2d2;"
+  >
+    <div class="flex-1">
+      <h2 class="text-3xl mb-8">Convenient and Agile Mobility</h2>
+      <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">3kg, 44mm</p>
+      <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
+        Ultra-light and thin, agile mobility
+      </p>
+    </div>
+    <div class="flex-1">
+      <img src="/images/products/UIS/MX7/mx-7-001.webp" alt="" />
+    </div>
+  </section>
+  <section
+    class="h-fit md:h-auto md:w-[100vw] bg-cover bg-center text-white py-16 px-16 md:px-32"
+    style="background-image: url('/images/products/UIS/mx7/bg-black.webp'); "
+  >
+    <h2 class="text-3xl mb-16 md:mb-0 md:mt-8 text-center">
+      Intuitive Interface
+    </h2>
+    <div
+      class="flex flex-col md:flex-row w-full justify-center items-center md:px-24 md:py-12 gap-x-24"
+    >
+      <div class="flex-1 mb-8">
+        <img src="/images/products/UIS/MX7/user-design.webp" alt="" />
+        <p class="my-8 md:mb-12 md:text-2xl text-gray-600 text-center">
+          User-centric Design | User-defined layout
+        </p>
+      </div>
+      <div class="flex-1">
+        <img src="/images/products/UIS/MX7/three-screens-design.webp" alt="" />
+        <p class="my-8 md:mb-12 md:text-2xl text-gray-600 text-center">
+          Three screens design
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="w-[100vw] flex" style="background-color: #EEEEEE;">
+    <div class="flex justify-center w-full h-auto">
+      <video
+        src="/videos/products/UIS/MX7/mx7-tilt.mp4"
+        no-controls
+        autoplay
+        muted></video>
+    </div>
+  </section>
+  <section
+    class="p-12 md:py-32 md:px-64 bg-gray-100"
+    style="background-image: url('/images/products/UIS/mx7/mx7-bg.webp')"
+  >
+    <div class="grid">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-3xl md:text-5xl mb-8">Trustworthy Imaging</h2>
+      </div>
+    </div>
+    <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
+      MX7, based on our revolutionary ZST+ platform, premium probe technology
+      and advanced algorithm, is designed to provide trustworthy imaging for
+      clinicians, rendering more confidence on diagnosis.
+    </p>
+    <div
+      class="w-full flex flex-col md:flex-row justify-center items-center md:gap-x-32"
+    >
+      <img src="/images/products/UIS/MX7/mx7-aaa.webp" alt="" />
+      <img src="/images/products/UIS/MX7/mx7-dpf.webp" alt="" />
+    </div>
+  </section>
+
+  <!-- МОБАЙЛ ДЭЭР ЗАСАХ ШААРДЛАГАТАЙ -->
+  <section class="w-[100vw] h-fit p-12 md:py-32 md:px-32 bg-gray-200">
+    <h2 class="text-3xl md:text-5xl mb-10 text-center">
+      Cardiovascular Solution
+    </h2>
+    <div class="slider w-full h-fit px-4 md:w-8/12 mx-auto">
+      <div class="slider__track-wrapper overflow-hidden relative">
+        <div class="slider__track flex transition-transform duration-300">
+          <!-- Slide 1 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">Tissue Doppler Imaging (TDI)</h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  Multi-TDI modes TVI, TEI, TVD and TVM<br /><br />
+                  Support real time and offline comparison analysis
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-auto px-1"
+                src="/images/products/UIS/MX7/mx7-slide-tdi.webp"
+                alt="Image 1"
+              />
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">
+                  Tissue Tracking and Quantification Analysis
+                </h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  Excellent B mode image quality provide accurate diagnosis<br
+                  /><br />
+                  Support for online and offline analysis
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-ttqa.webp"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">Auto EF</h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  Automatically recognize A2C or A4C <br /><br />
+
+                  Automatically recognize the border of endocardium <br /><br />
+                  Automatically recognize diastole and systole frames
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-tdi.webp"
+                alt="Image 3"
+              />
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">Stress Echo</h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  Cardiac wall motion score<br /><br />
+                  Supporting stress imaging under LVO<br /><br />
+                  Evaluation of myocardial perfusion and viability
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-stress-echo.webp"
+                alt="Image 4"
+              />
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">
+                  LVO (Left ventricle Opacification)
+                </h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  Providing clearer endocardia border display to improve image
+                  performance of difficult patients.
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-tdi.webp"
+                alt="Image 5"
+              />
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">RIMT</h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  RF-data Based IMT based on Radio Frequency data and accurate
+                  real-time IMT measurement<br /><br />
+                  Early diagnosis CVDs<br /><br />
+                  Measure the RF data of totally 6 cardiac cycles and then find out
+                  the maximum value of each cardiac cycle and the mean value of 6
+                  maximum values, providing more trustable and reliable<br /><br
+                  />High precision, real time and auto measurement can improve
+                  early diagnosis of CVDs and improve the effectiveness of
+                  pharmacy treatment follow-up
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-rimt.webp"
+                alt="Image 6"
+              />
+            </div>
+          </div>
+          <!-- Slide 7 -->
+          <div class="slider__slide w-full mb-10">
+            <div class="slider__item flex flex-col md:flex-row justify-center">
+              <div
+                class="slider__item-content flex flex-col w-full md:w-1/2 pr-10"
+              >
+                <h3 class="text-2xl my-4">R-VQS</h3>
+                <p class="text-lg text-gray-600 mt-4">
+                  RF-data Based Quantitative Analysis on Vessel Stiffness based
+                  on Radio Frequency data, and provides extremely accurate
+                  calculation on vessel wall distension<br /><br />
+                  Solution for early diagnosis CVD<br /><br />
+                  After the collection of data, press &#39;Accepted Result&#39;,
+                  we&#39;ll get a report about PWV and Hardness coefficient<br
+                  /><br />High precision, real time and auto measurement
+                  provides complete solution for early vascular Diagnostic
+                </p>
+              </div>
+              <img
+                class="slider__image w-auto h-96 px-1"
+                src="/images/products/UIS/MX7/mx7-slide-rvqs.webp"
+                alt="Image 7"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <div
+        class="slider__controls flex justify-center items-center mt-4 space-x-4"
+      >
+        <button class="slider__control slider__control--prev">&larr;</button>
+        <div class="slider__dots flex space-x-2">
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="0"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="1"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="2"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="3"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="4"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="5"></button>
+          <button
+            class="slider__dot w-4 h-4 rounded-full bg-gray-400"
+            data-slide="6"></button>
+        </div>
+        <button class="slider__control slider__control--next">&rarr;</button>
+      </div>
+    </div>
+  </section>
+  <section class="p-12 md:py-32 md:px-64 bg-gray-100">
+    <div class="flex flex-col w-full mx-auto justify-center items-center">
+      <h2 class="text-3xl md:text-5xl mb-8">Comprehensive Battery Solution</h2>
+    </div>
+    <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
+      With optional U-Bank, MX7 can support up to 8 hours continuous scanning,
+      providing one day scanning companion.
+    </p>
+    <div
+      class="w-full flex flex-col md:flex-row justify-center items-center md:gap-x-32"
+    >
+      <div>
+        <img
+          class="mb-4"
+          src="/images/products/UIS/MX7/mx7-ubank-trolley.webp"
+          alt=""
+        />
+        <p class="mb-16 md:mb-12 md:text-2xl text-gray-600 pr-20">
+          U-Bank with trolley
+        </p>
+      </div>
+      <div>
+        <img
+          class="mb-4"
+          src="/images/products/UIS/MX7/mx7-ubank-main.webp"
+          alt=""
+        />
+        <p class="mb-8 md:mb-12 md:text-2xl text-gray-600 pr-20">
+          U-Bank with main unit
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="w-[100vw] p-12 md:py-32 md:px-64 bg-gray-200">
+    <div class="w-full">
+      <div class="">
+        <div class="bg-sliver">
+          <div class="wrap">
+            <h2 class="text-3xl md:text-5xl mb-10 md:mb-16 text-center">
+              Promising Design
+            </h2>
+            <div class="master-wrapper">
+              <div class="master">
+                <div class="bg-img">
+                  <img
+                    src="/images/products/UIS/MX7/master.webp"
+                    alt=""
+                    style="mix-blend-mode: multiply;"
+                  />
+                </div>
+              </div>
+              <div class="point-wrapper">
+                <div class="point point-3 active"><span>1</span></div>
+                <div class="point-content point-content-3">
+                  <h5>AL-Mg alloy design</h5>
+                  <p>
+                    AL-Mg covers on MX provides the high quality with better
+                    robust and duration
+                  </p>
+                  <div class="bg-img">
+                    <img
+                      src="/images/products/UIS/MX7/20200521162630_5450.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-1"><span>2</span></div>
+                <div class="point-content point-content-1">
+                  <h5>Convenient probe extender</h5>
+                  <p>
+                    Extend the probe socket from one to two ports, no matter
+                    with trolley or not
+                  </p>
+                  <div class="bg-img">
+                    <img
+                      src="/images/products/UIS/MX7/20200521162649_1315.webp"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-2"><span>3</span></div>
+                <div class="point-content point-content-2">
+                  <h5>Medical-grade magnetic power socket</h5>
+                  <ul>
+                    <li>Simple to connect</li>
+                    <li>Prevents cable strain</li>
+                  </ul>
+                  <div class="bg-img mt-1vw">
+                    <img
+                      src="/images/products/UIS/MX7/20200526160855_6906.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-4"><span>4</span></div>
+                <div class="point-content point-content-4">
+                  <h5>Anti-collision design</h5>
+                  <ul>
+                    <li>Transducer holder</li>
+                    <li>Rear handle for main unit</li>
+                  </ul>
+                  <div class="bg-img mt-1vw">
+                    <img
+                      src="/images/products/UIS/MX7/20200526160814_1290.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-5"><span>5</span></div>
+                <div class="point-content point-content-5">
+                  <h5>Cable management</h5>
+                  <ul>
+                    <li>Probe cable upwards</li>
+                    <li>Multi-functional rear handle for winding cable</li>
+                  </ul>
+                  <div class="bg-img mt-1vw">
+                    <img
+                      src="/images/products/UIS/MX7/20200526174518_6693.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-6"><span>6</span></div>
+                <div class="point-content point-content-6">
+                  <h5>Innovative storage design</h5>
+                  <ul>
+                    <li>Three storage baskets provide large storage space</li>
+                    <li>
+                      The baskets are interchangeable, the tray can be used as
+                      cover to avoid dropping
+                    </li>
+                  </ul>
+                  <div class="bg-img mt-1vw">
+                    <img
+                      src="/images/products/UIS/MX7/20200526160834_6977.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-7"><span>7</span></div>
+                <div class="point-content point-content-7">
+                  <h5>Largest lifting range</h5>
+                  <p>320mm height lifting range.</p>
+                  <div class="bg-img mt-1vw">
+                    <img
+                      src="/images/products/UIS/MX7/20200526160845_1390.gif"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="point point-8"><span>8</span></div>
+                <div class="point-content point-content-8">
+                  <h5>"X" ultra-small chassis</h5>
+                  <p class="mb-0">Free to enter narrow space and rotate</p>
+                </div>
+                <div class="point point-9"><span>9</span></div>
+                <div class="point-content point-content-9">
+                  <h5>Vibration-reducing casters</h5>
+                  <p class="mb-0">Adapt to various road conditions</p>
+                </div>
+              </div>
+            </div>
+            <div class="pc-none md:hidden">
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>1</span>
+                <h5>AL-Mg alloy design</h5>
+                <p>
+                  AL-Mg covers on MX provides the high quality with better
+                  robust and duration
+                </p>
+                <div class="bg-img">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200521162630_5450.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>2</span>
+                <h5>Convenient probe extender</h5>
+                <p>
+                  Extend the probe socket from one to two ports, no matter with
+                  trolley or not
+                </p>
+                <div class="bg-img">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200521162649_1315.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>3</span>
+                <h5>Medical-grade magnetic power socket</h5>
+                <ul>
+                  <li>Simple to connect</li>
+                  <li>Prevents cable strain</li>
+                </ul>
+                <div class="bg-img mt-2vw">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200526160855_6906.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>4</span>
+                <h5>Anti-collision design</h5>
+                <ul>
+                  <li>Transducer holder</li>
+                  <li>Rear handle for main unit</li>
+                </ul>
+                <div class="bg-img mt-2vw">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200526160814_1290.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>5</span>
+                <h5>Cable management</h5>
+                <ul>
+                  <li>Probe cable upwards</li>
+                  <li>Multi-functional rear handle for winding cable</li>
+                </ul>
+                <div class="bg-img mt-2vw">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200526174518_6693.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>6</span>
+                <h5>Innovative storage design</h5>
+                <ul>
+                  <li>Three storage baskets provide large storage space</li>
+                  <li>
+                    The baskets are interchangeable, the tray can be used as
+                    cover to avoid dropping
+                  </li>
+                </ul>
+                <div class="bg-img mt-2vw">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200526160834_6977.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>7</span>
+                <h5>Largest lifting range</h5>
+                <p>320mm height lifting range.</p>
+                <div class="bg-img mt-2vw">
+                  <img
+                    src="/content/dam/xpace/en/products-solutions/products/ultrasound/cardiology/mx7/20200526160845_1390.gif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>8</span>
+                <h5>"X" ultra-small chassis</h5>
+                <p class="mb-0">Free to enter narrow space and rotate</p>
+              </div>
+              <div class="mob-point aos-init aos-animate" data-aos="fade-up">
+                <span>9</span>
+                <h5>Vibration-reducing casters</h5>
+                <p class="mb-0">Adapt to various road conditions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .slider__track-wrapper {
+    @apply overflow-hidden w-full; /* Slider-ийн нийт өргөнийг тогтооно */
+  }
+
+  .slider__track {
+    @apply flex; /* Slide-уудыг дарааллуулна */
+  }
+
+  .slider__slide {
+    @apply w-full flex-shrink-0; /* Нэг слайд зөвхөн нэг дэлгэцэнд багтахаар тохируулна */
+  }
+
+  /* Add this to your Tailwind CSS config or global CSS if needed */
+  .slider__control {
+    @apply text-xl font-bold text-gray-700 cursor-pointer;
+  }
+
+  .slider__dot {
+    @apply transition-colors duration-300 cursor-pointer;
+  }
+
+  .slider__dot-active {
+    @apply bg-blue-500;
+  }
+
+  .master-wrapper {
+    width: 100%;
+    position: relative;
+  }
+
+  .master-wrapper .master {
+    width: 40%;
+    position: relative;
+  }
+
+  .point-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .point {
+    position: absolute;
+    cursor: pointer;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    background-color: #739dc2;
+    border: 2px solid #fff;
+    opacity: 0.73;
+    transition: all 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .point > span {
+    display: none;
+    color: #fff;
+  }
+
+  .point.active {
+    background-color: #565656;
+  }
+
+  .point-content {
+    width: 32%;
+    padding: 2vw;
+    position: absolute;
+    border: 1px solid #595959;
+    display: none;
+    background-color: #ededed;
+  }
+
+  .point.active + .point-content {
+    display: block;
+  }
+
+  .point::after {
+    content: "";
+    border-top: 1px solid #313131;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  .point.active::after {
+    display: block;
+  }
+
+  .point.active::after {
+    width: 38vw;
+    right: -38vw;
+  }
+
+  .point-1 {
+    top: 19%;
+    left: 24%;
+  }
+
+  .point-content-1 {
+    top: 0;
+    left: 60%;
+  }
+
+  .point-2 {
+    top: 22%;
+    left: 11%;
+  }
+
+  .point-content-2 {
+    top: 0%;
+    left: 60%;
+  }
+
+  .point-3 {
+    top: 10%;
+    left: 21%;
+  }
+
+  .point-content-3 {
+    top: 0%;
+    left: 60%;
+  }
+
+  .point-4 {
+    top: 25%;
+    left: 18%;
+  }
+
+  .point-content-4 {
+    top: 10%;
+    left: 60%;
+  }
+
+  .point-5 {
+    top: 30%;
+    left: 14%;
+  }
+
+  .point-content-5 {
+    top: 10%;
+    left: 60%;
+  }
+
+  .point-6 {
+    top: 51%;
+    left: 28%;
+  }
+
+  .point-content-6 {
+    top: 26%;
+    left: 60%;
+  }
+
+  .point-7 {
+    top: 64%;
+    left: 19%;
+  }
+
+  .point-content-7 {
+    top: 43%;
+    left: 60%;
+  }
+
+  .point-8 {
+    top: 70%;
+    left: 16%;
+  }
+
+  .point-content-8 {
+    top: 62%;
+    left: 60%;
+  }
+
+  .point-9 {
+    top: 80%;
+    left: 32%;
+  }
+
+  .point-content-9 {
+    top: 71%;
+    left: 60%;
+  }
+
+  @media screen and (max-aspect-ratio: 1 / 1) and (max-width: 1200px),
+    screen and (max-width: 639px) {
+    .point {
+      width: 8vw;
+      height: 8vw;
+    }
+
+    .point > span {
+      display: block;
+      font-size: 4.26667vw;
+    }
+
+    .master-wrapper .master {
+      width: 100%;
+    }
+
+    .point.active::after {
+      display: none;
+    }
+
+    .point.active + .point-content {
+      display: none;
+    }
+
+    .point.active {
+      background-color: #739dc2;
+    }
+
+    .point-3 {
+      left: 53%;
+    }
+
+    .point-1 {
+      left: 60%;
+    }
+
+    .point-2 {
+      left: 28%;
+    }
+
+    .point-4 {
+      left: 45%;
+    }
+
+    .point-5 {
+      left: 35%;
+    }
+
+    .point-7 {
+      left: 46%;
+    }
+
+    .point-8 {
+      left: 41%;
+    }
+
+    .point-9 {
+      left: 80%;
+    }
+
+    .mob-point {
+      padding-left: 5vw;
+      position: relative;
+      margin-top: 8vw;
+    }
+
+    .mob-point > span {
+      position: absolute;
+      top: 0vw;
+      left: -4vw;
+      width: 8vw;
+      height: 8vw;
+      border-radius: 50%;
+      background-color: #739dc2;
+      border: 2px solid #fff;
+      opacity: 0.73;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 4.26667vw;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sliderTrack = document.querySelector(".slider__track");
+    const slides = document.querySelectorAll(".slider__slide");
+    const dots = document.querySelectorAll(".slider__dot");
+    const prevBtn = document.querySelector(".slider__control--prev");
+    const nextBtn = document.querySelector(".slider__control--next");
+
+    let currentIndex = 0;
+
+    // Update slider to show the correct slide
+    // Function to update the slider
+    function updateSlider(index: number) {
+      const offset = -index * 100;
+
+      // Ensure sliderTrack is an HTMLElement
+      if (sliderTrack instanceof HTMLElement) {
+        sliderTrack.style.transform = `translateX(${offset}%)`;
+      }
+
+      // Update dot active state
+      dots.forEach((dot, i) => {
+        if (dot instanceof HTMLElement) {
+          dot.classList.toggle("slider__dot-active", i === index);
+        }
+      });
+
+      // Ensure prevBtn is an HTMLButtonElement
+      if (prevBtn instanceof HTMLButtonElement) {
+        prevBtn.disabled = index === 0;
+      }
+
+      // Ensure nextBtn is an HTMLButtonElement
+      if (nextBtn instanceof HTMLButtonElement) {
+        nextBtn.disabled = index === slides.length - 1;
+      }
+    }
+
+    // Handle prev button click
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--; // Move to the previous slide
+        updateSlider(currentIndex);
+      }
+    });
+
+    // Handle next button click
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++; // Move to the next slide
+        updateSlider(currentIndex);
+      }
+    });
+
+    // Handle dot click
+    dots.forEach((dot) => {
+      if (dot instanceof HTMLElement && dot.dataset.slide) {
+        const currentIndex = parseInt(dot.dataset.slide);
+        console.log(currentIndex);
+      }
+    });
+
+    // Initialize slider
+    updateSlider(currentIndex);
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".point").forEach((point) => {
+    point.addEventListener("mouseenter", function () {
+      // 1. Бүх "point" элементүүдээс "active" классыг арилгах
+      document
+        .querySelectorAll(".point")
+        .forEach((el) => el.classList.remove("active"));
+
+      // 2. Хулгана орж ирсэн элементэд "active" классыг нэмэх
+      this.classList.add("active");
+    });
+  });
+</script>
