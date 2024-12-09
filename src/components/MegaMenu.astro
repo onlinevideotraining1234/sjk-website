@@ -2,154 +2,143 @@
 
 ---
 
-<header class="max-w-[100vw]">
+<header class="max-w-[100vw] h-10">
   <nav
-    class="static w-full mx-auto h-10 flex justify-between md:justify-center items-center"
+    class="main-nav relative w-full h-full flex justify-between lg:justify-center items-center px-4 lg:px-0"
   >
-    <div
-      class="wrapper w-full flex justify-between md:justify-center items-center px-4 gap-x-10"
-    >
-      <div class="logo">
-        <a href="/">
-          <img src="/images/icons/logo-icon-black.webp" class="w-6" alt="" />
-        </a>
-      </div>
-      <input type="radio" name="slider" id="menu-btn" />
-      <input type="radio" name="slider" id="close-btn" />
+    <div class="logo lg:mr-10">
+      <a href="/">
+        <img src="/images/icons/full-black-logo.webp" class="w-20" alt="" />
+      </a>
+    </div>
+    <input type="radio" name="slider" id="menu-btn" />
+    <input type="radio" name="slider" id="close-btn" />
 
-      <ul
-        class="nav-links flex justify-center items-center md:gap-x-10 text-gray-700 w-auto static md:text-center h-full"
+    <ul class="nav-links w-auto h-full flex gap-x-10 lg:items-center">
+      <label for="close-btn" class="btn close-btn"
+        ><i class="fa fa-times"></i></label
       >
-        <label for="close-btn" class="btn close-btn"
-          ><i class="fa fa-times"></i></label
+      <li class="w-full uis-link">
+        <input type="checkbox" id="showMega-uis" />
+        <label
+          for="showMega-uis"
+          class="dropdown__button mobile-item cursor-pointer">Ultrasound</label
         >
-        <li class="w-full uis-link">
-          <input type="checkbox" id="showMega-uis" />
-          <label
-            for="showMega-uis"
-            class="dropdown__button mobile-item cursor-pointer"
-            >Ultrasound</label
-          >
+        <div
+          class="mega-box-uis w-full h-auto flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 lg:border-t lg:py-10"
+        >
           <div
-            class="mega-box-uis w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 md:border-t md:py-16"
+            class="dropdown__content w-full lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
           >
-            <div
-              class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
-            >
-              <div class="dropdown__group">
-                <div
-                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
-                >
-                  <a href="/resona-i9" class="dropdown__image-link">
-                    <img
-                      src="/images/products/UIS/ResonaI9/resonai9Menu.webp"
-                      alt="Item 1"
-                      class="dropdown__image w-auto h-64 md:h-72"
-                    />
-                  </a>
-                  <div class="dropdown__content text-center">
-                    <h3 class="dropdown__name text-3xl md:text-lg">
-                      Resona I9
-                    </h3>
-                    <a
-                      href="/resona-i9"
-                      class="dropdown__link text-xs text-gray-600 hover:underline"
-                      >Дэлгэрэнгүй</a
-                    >
-                  </div>
+            <div class="dropdown__group hover:bg-gray-200">
+              <div
+                class="dropdown__item flex lg:flex-col items-center justify-start lg:justify-center"
+              >
+                <a href="/resona-i9" class="dropdown__image-link">
+                  <img
+                    src="/images/products/UIS/ResonaI9/resonai9Menu.webp"
+                    alt="Item 1"
+                    class="dropdown__image w-auto h-36 lg:h-56"
+                  />
+                </a>
+                <div class="dropdown__content text-center">
+                  <h3 class="dropdown__name text-3xl lg:text-lg">Resona I9</h3>
+                  <a
+                    href="/resona-i9"
+                    class="dropdown__link text-xs text-gray-600 hover:underline"
+                    >Дэлгэрэнгүй</a
+                  >
                 </div>
               </div>
-              <div class="dropdown__group">
-                <div
-                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
-                >
-                  <a href="/consona-n9" class="dropdown__image-link">
-                    <img
-                      src="/images/products/UIS/consona-n9.webp"
-                      alt="Item 1"
-                      class="dropdown__image w-auto h-64 md:h-72"
-                    />
-                  </a>
-                  <div class="dropdown__content text-center">
-                    <h3 class="dropdown__name text-3xl md:text-lg">
-                      Consona N9
-                    </h3>
-                    <a
-                      href="/consona-n9"
-                      class="dropdown__link text-xs text-gray-600 hover:underline"
-                      >Дэлгэрэнгүй</a
-                    >
-                  </div>
+            </div>
+            <div class="dropdown__group hover:bg-gray-200">
+              <div
+                class="dropdown__item flex lg:flex-col items-center justify-start lg:justify-center"
+              >
+                <a href="/consona-n9" class="dropdown__image-link">
+                  <img
+                    src="/images/products/UIS/consona-n9.webp"
+                    alt="Item 1"
+                    class="dropdown__image w-auto h-36 lg:h-56"
+                  />
+                </a>
+                <div class="dropdown__content text-center">
+                  <h3 class="dropdown__name text-3xl lg:text-lg">Consona N9</h3>
+                  <a
+                    href="/consona-n9"
+                    class="dropdown__link text-xs text-gray-600 hover:underline"
+                    >Дэлгэрэнгүй</a
+                  >
                 </div>
               </div>
-              <div class="dropdown__group">
-                <div
-                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
-                >
-                  <a href="/mx7" class="dropdown__image-link">
-                    <img
-                      src="/images/products/UIS/mx-7.webp"
-                      alt="Item 1"
-                      class="dropdown__image w-auto h-64 md:h-72"
-                    />
-                  </a>
-                  <div class="dropdown__content text-center">
-                    <h3 class="dropdown__name text-3xl md:text-lg">MX7</h3>
-                    <a
-                      href="/mx7"
-                      class="dropdown__link text-xs text-gray-600 hover:underline"
-                      >Дэлгэрэнгүй</a
-                    >
-                  </div>
+            </div>
+            <div class="dropdown__group hover:bg-gray-200">
+              <div
+                class="dropdown__item flex lg:flex-col items-center justify-start lg:justify-center"
+              >
+                <a href="/mx7" class="dropdown__image-link">
+                  <img
+                    src="/images/products/UIS/mx-7.webp"
+                    alt="Item 1"
+                    class="dropdown__image w-auto h-36 lg:h-56"
+                  />
+                </a>
+                <div class="dropdown__content text-center">
+                  <h3 class="dropdown__name text-3xl lg:text-lg">MX7</h3>
+                  <a
+                    href="/mx7"
+                    class="dropdown__link text-xs text-gray-600 hover:underline"
+                    >Дэлгэрэнгүй</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-        </li>
-        <li class="w-full ct-link">
-          <input type="checkbox" id="showMega-ct" />
-          <label
-            for="showMega-ct"
-            class="dropdown__button mobile-item cursor-pointer">CT</label
-          >
+        </div>
+      </li>
+      <li class="w-full ct-link">
+        <input type="checkbox" id="showMega-ct" />
+        <label
+          for="showMega-ct"
+          class="dropdown__button mobile-item cursor-pointer">CT</label
+        >
+        <div
+          class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 lg:border-t lg:py-10 mb-10"
+        >
           <div
-            class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 md:border-t md:py-16"
+            class="dropdown__content w-full lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
           >
-            <div
-              class="dropdown__content w-full md:w-8/12 flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-10 py-8"
-            >
-              <div class="dropdown__group">
-                <div
-                  class="dropdown__item flex md:flex-col items-center justify-start md:justify-center"
-                >
-                  <a href="/uCT550" class="dropdown__image-link">
-                    <img
-                      src="/images/products/CT/uCT-550.webp"
-                      alt="Item 1"
-                      class="dropdown__image w-auto h-64 md:h-72"
-                    />
-                  </a>
-                  <div class="dropdown__content text-center">
-                    <h3 class="dropdown__name text-3xl md:text-lg">uCT550</h3>
-                    <a
-                      href="/uCT550"
-                      class="dropdown__link text-xs text-gray-600 hover:underline"
-                      >Дэлгэрэнгүй</a
-                    >
-                  </div>
+            <div class="dropdown__group hover:bg-gray-200">
+              <div
+                class="dropdown__item flex lg:flex-col items-center justify-start lg:justify-center"
+              >
+                <a href="/uCT550" class="dropdown__image-link">
+                  <img
+                    src="/images/products/CT/uCT-550.webp"
+                    alt="Item 1"
+                    class="dropdown__image w-auto h-36 lg:h-56"
+                  />
+                </a>
+                <div class="dropdown__content text-center">
+                  <h3 class="dropdown__name text-3xl lg:text-lg">uCT550</h3>
+                  <a
+                    href="/uCT550"
+                    class="dropdown__link text-xs text-gray-600 hover:underline"
+                    >Дэлгэрэнгүй</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-        </li>
-        <!-- <li class="hover:text-gray-900 text-nowrap">
+        </div>
+      </li>
+      <!-- <li class="hover:text-gray-900 text-nowrap">
           <a href="/shinjyukuCare">Shinjyuku Care+</a>
         </li> -->
-      </ul>
-      <label for="menu-btn" class="btn menu-btn"
-        ><i class="fas fa-bars text-black font-extralight"></i></label
-      >
-    </div>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"
+      ><i class="fas fa-bars text-black font-extralight"></i></label
+    >
   </nav>
 </header>
 
@@ -176,23 +165,23 @@
     z-index: 1001;
   }
 
-  .wrapper .btn {
+  .main-nav .btn {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
     display: none;
   }
-  .wrapper .btn.close-btn {
+  .main-nav .btn.close-btn {
     position: absolute;
     right: 30px;
     top: 10px;
   }
-  @media screen and (max-width: 970px) {
-    .wrapper .btn {
+  @media screen and (max-width: 768px) {
+    .main-nav .btn {
       display: block;
       color: #242526;
     }
-    .wrapper .nav-links {
+    .main-nav .nav-links {
       /* position: fixed; */
       position: absolute;
       /* height: max-content; */
@@ -208,6 +197,7 @@
       /* overflow-y: auto; */
       box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
       transition: all 0.3s ease;
+      z-index: 1000;
     }
     /* custom scroll bar */
     ::-webkit-scrollbar {
@@ -241,7 +231,15 @@
       z-index: 1000;
     } */
 
-    #showMega-uis:checked ~ .mega-box-uis {
+    .mega-box-uis,
+    .mega-box-ct {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      position: relative;
+    }
+
+    /* #showMega-uis:checked ~ .mega-box-uis {
       max-height: fit-content;
     }
 
@@ -255,7 +253,7 @@
 
     #showMega-ct:checked ~ .mega-box-uis {
       max-height: 0;
-    }
+    } */
 
     /* #showMega:checked ~ .dropdown__content {
       max-height: fit-content;
@@ -301,3 +299,34 @@
     display: none;
   }
 </style>
+
+<script>
+  document.querySelectorAll(".dropdown__button").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const target = event.target as HTMLElement; // Target элементийг тодорхойлох
+      const currentDropdown = target.nextElementSibling as HTMLElement | null; // Dropdown элементийг тодорхойлох
+      const allDropdowns = document.querySelectorAll<HTMLElement>(
+        ".mega-box-uis, .mega-box-ct"
+      );
+
+      // Бүх цэсийг хаана
+      allDropdowns.forEach((dropdown) => {
+        if (dropdown !== currentDropdown) {
+          dropdown.style.maxHeight = "0";
+        }
+      });
+
+      // Хэрэв тухайн цэс байгаа бол нээх/хаах
+      if (currentDropdown) {
+        if (
+          currentDropdown.style.maxHeight === "0px" ||
+          !currentDropdown.style.maxHeight
+        ) {
+          currentDropdown.style.maxHeight = "fit-content";
+        } else {
+          currentDropdown.style.maxHeight = "0";
+        }
+      }
+    });
+  });
+</script>
