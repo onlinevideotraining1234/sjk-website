@@ -2,15 +2,17 @@
 
 ---
 
-<header class="max-w-[100vw] h-10">
+<header
+  class="max-w-[100vw] h-10 lg:flex lg:justify-between lg:items-center lg:px-10"
+>
+  <div class="logo lg:mr-10">
+    <a href="/">
+      <img src="/images/icons/full-black-logo.webp" class="w-24" alt="" />
+    </a>
+  </div>
   <nav
     class="main-nav relative w-full h-full flex justify-between lg:justify-center items-center px-4 lg:px-0"
   >
-    <div class="logo lg:mr-10">
-      <a href="/">
-        <img src="/images/icons/full-black-logo.webp" class="w-20" alt="" />
-      </a>
-    </div>
     <input type="radio" name="slider" id="menu-btn" />
     <input type="radio" name="slider" id="close-btn" />
 
@@ -132,6 +134,43 @@
           </div>
         </div>
       </li>
+      <li class="w-full ct-link">
+        <input type="checkbox" id="showMega-ct" />
+        <label
+          for="showMega-ct"
+          class="dropdown__button mobile-item cursor-pointer"
+          style="white-space: nowrap;">X-Ray</label
+        >
+        <div
+          class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 lg:border-t lg:py-10 mb-10"
+        >
+          <div
+            class="dropdown__content w-full lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
+          >
+            <div class="dropdown__group hover:bg-gray-200">
+              <div
+                class="dropdown__item flex lg:flex-col items-center justify-start lg:justify-center"
+              >
+                <a href="/uCT550" class="dropdown__image-link">
+                  <img
+                    src="/images/products/CT/uCT-550.webp"
+                    alt="Item 1"
+                    class="dropdown__image w-auto h-36 lg:h-56"
+                  />
+                </a>
+                <div class="dropdown__content text-center">
+                  <h3 class="dropdown__name text-3xl lg:text-lg">uCT550</h3>
+                  <a
+                    href="/uCT550"
+                    class="dropdown__link text-xs text-gray-600 hover:underline"
+                    >Дэлгэрэнгүй</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
       <!-- <li class="hover:text-gray-900 text-nowrap">
           <a href="/shinjyukuCare">Shinjyuku Care+</a>
         </li> -->
@@ -140,6 +179,18 @@
       ><i class="fas fa-bars text-black font-extralight"></i></label
     >
   </nav>
+  <div class="contact-info lg:flex gap-x-10 items-center justify-center">
+    <a
+      class="aspect-square h-full"
+      href="https://www.facebook.com/mongoliamindray"
+      target="_blank"><ion-icon name="logo-facebook"></ion-icon></a
+    >
+    <a
+      class="aspect-square h-full"
+      href="https://www.instagram.com/shinjyuku_llc?igsh=czgwMHlweDFqdXFu"
+      target="_blank"><ion-icon name="logo-instagram"></ion-icon></a
+    >
+  </div>
 </header>
 
 <style>
