@@ -3,7 +3,7 @@
 ---
 
 <header
-  class="max-w-[100vw] h-10 lg:flex lg:justify-between lg:items-center lg:px-10"
+  class="max-w-[100vw] h-10 lg:flex lg:justify-between lg:items-center lg:px-10 relative"
 >
   <div class="logo lg:mr-10">
     <a href="/">
@@ -11,7 +11,7 @@
     </a>
   </div>
   <nav
-    class="main-nav relative w-full h-full flex justify-between lg:justify-center items-center px-4 lg:px-0"
+    class="main-nav h-full flex justify-between lg:justify-center items-center px-4 lg:px-0"
   >
     <input type="radio" name="slider" id="menu-btn" />
     <input type="radio" name="slider" id="close-btn" />
@@ -134,7 +134,7 @@
           </div>
         </div>
       </li>
-      <li class="w-full ct-link">
+      <!-- <li class="w-full ct-link">
         <input type="checkbox" id="showMega-ct" />
         <label
           for="showMega-ct"
@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-      </li>
+      </li> -->
       <!-- <li class="hover:text-gray-900 text-nowrap">
           <a href="/shinjyukuCare">Shinjyuku Care+</a>
         </li> -->
@@ -199,6 +199,10 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   .nav-links .uis-link:hover .mega-box-uis {
