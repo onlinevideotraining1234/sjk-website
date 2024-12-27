@@ -3,9 +3,9 @@
 ---
 
 <header
-  class="max-w-[100vw] h-10 lg:flex lg:justify-between lg:items-center lg:px-10 relative"
+  class="max-w-[100vw] h-10 flex justify-between items-center lg:px-8 relative"
 >
-  <div class="logo lg:mr-10">
+  <div class="logo pl-4 lg:pl-0">
     <a href="https://shinjyuku.mn">
       <img src="/images/icons/full-black-logo.webp" class="w-24" alt="" />
     </a>
@@ -16,7 +16,7 @@
     <input type="radio" name="slider" id="menu-btn" />
     <input type="radio" name="slider" id="close-btn" />
 
-    <ul class="nav-links w-auto h-full flex gap-x-10 lg:items-center">
+    <ul class="nav-links w-auto flex gap-x-10 lg:items-center">
       <label for="close-btn" class="btn close-btn"
         ><i class="fa fa-times"></i></label
       >
@@ -27,10 +27,10 @@
           class="dropdown__button mobile-item cursor-pointer">Ultrasound</label
         >
         <div
-          class="mega-box-uis w-full h-auto flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 lg:border-t lg:py-10"
+          class="mega-box-uis w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 lg:border-t lg:py-10"
         >
           <div
-            class="dropdown__content w-full lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
+            class="dropdown__content w-full max-h-fit lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
           >
             <div class="dropdown__group hover:bg-gray-200">
               <div
@@ -105,10 +105,10 @@
           class="dropdown__button mobile-item cursor-pointer">CT</label
         >
         <div
-          class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out h-auto bg-gray-100 lg:border-t lg:py-10 mb-10"
+          class="mega-box-ct w-full flex justify-center absolute top-10 inset-x-0 transition-all duration-500 ease-in-out bg-gray-100 lg:border-t lg:py-10 mb-10"
         >
           <div
-            class="dropdown__content w-full lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
+            class="dropdown__content w-full max-h-fit lg:w-8/12 flex flex-col lg:flex-row justify-center lg:gap-x-10 gap-y-10"
           >
             <div class="dropdown__group hover:bg-gray-200">
               <div
@@ -179,7 +179,7 @@
       ><i class="fas fa-bars text-black font-extralight"></i></label
     >
   </nav>
-  <div class="contact-info lg:flex gap-x-10 items-center justify-center">
+  <div class="contact-info hidden lg:flex gap-x-10 items-center justify-center">
     <a
       class="aspect-square h-full"
       href="https://www.facebook.com/mongoliamindray"
@@ -292,6 +292,7 @@
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
       position: relative;
+      width: 100%;
     }
 
     /* #showMega-uis:checked ~ .mega-box-uis {
@@ -383,5 +384,28 @@
         }
       }
     });
+  });
+</script>
+<script>
+  window.addEventListener("resize", () => {
+    const allDropdowns = document.querySelectorAll(
+      ".mega-box-uis, .mega-box-ct"
+    );
+
+    if (window.innerWidth >= 768) {
+      allDropdowns.forEach((dropdown) => {
+        if (dropdown instanceof HTMLElement) {
+          dropdown.style.maxHeight = "none"; // Desktop горимд хязгааргүй болгоно
+          dropdown.style.overflow = "visible";
+        }
+      });
+    } else {
+      allDropdowns.forEach((dropdown) => {
+        if (dropdown instanceof HTMLElement) {
+          dropdown.style.maxHeight = "0"; // Mobile горимд хаалттай болгоно
+          dropdown.style.overflow = "hidden";
+        }
+      });
+    }
   });
 </script>
